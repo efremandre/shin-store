@@ -1336,7 +1336,6 @@ a:focus {
 }
 .fullscreen__button {
   box-sizing: border-box;
-  padding: 1em;
 }
 
 .modal {
@@ -1388,7 +1387,6 @@ a:focus {
 
 .main {
   flex: 1 1 auto;
-  height: 5000px;
 }
 
 .logo {
@@ -1496,6 +1494,7 @@ a:focus {
   align-items: center;
   width: 100%;
   max-width: 270px;
+  padding: 1em;
   font-size: calc(18px + 2 * ((100vw - 320px) / 1200));
   color: #fff;
   line-height: 1.5em;

@@ -5,6 +5,7 @@
   @include mix.displayFlex(flex, center, center);
   width: 100%;
   max-width: 270px;
+  padding: 1em;
   @include mix.adaptivFont(var.$generalBigTextSize, var.$generalBigTextSizeMin);
   color: var.$lightColor;
   line-height: var.$generalBigLineHeight;
