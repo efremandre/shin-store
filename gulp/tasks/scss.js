@@ -40,6 +40,7 @@ export const scss = () => {
 			)
 		)
 		.pipe(app.plugins.replace(/\.\.\/\.\.\/\.\.\/assets\//g, "../assets/"))
+		.pipe(app.plugins.replace(/\.\.\/\.\.\/assets\//g, "../assets/"))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
