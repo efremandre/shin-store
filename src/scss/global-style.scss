@@ -5,7 +5,7 @@
 html,
 body {
 	height: 100%;
-	scrollbar-color: var.$accentColor var.$lightColor;
+	scrollbar-color: var.$darkColor var.$lightColor;
 	scrollbar-width: thin;
 	font-family: var.$family;
 	font-weight: 400;
@@ -52,7 +52,7 @@ p {
 a {
 	font-family: var.$family;
 	text-decoration: none;
-	color: var.$generalColorText;
+	color: var.$lightColor;
 }
 
 a:focus {

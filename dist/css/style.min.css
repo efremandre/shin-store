@@ -996,7 +996,14 @@ button.swiper-pagination-bullet {
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url("../assets/fonts/Manrope-Regular.woff2") format("woff2"), url("../assets/fonts/Manrope-Regular.woff") format("woff");
+  src: url("../assets/fonts/Manrope-Bold.woff2") format("woff2"), url("../assets/fonts/Manrope-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: fontello;
+  font-display: swap;
+  src: url("../assets/fonts/fontello.woff2") format("woff2"), url("../assets/fonts/fontello.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -1010,11 +1017,11 @@ button.swiper-pagination-bullet {
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url("../assets/fonts/Manrope-Bold.woff2") format("woff2"), url("../assets/fonts/Manrope-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../assets/fonts/Manrope-Regular.woff2") format("woff2"), url("../assets/fonts/Manrope-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
-.fullscreen:before, .nav__link:before, .phone__link:after, .phone__link:before, .burger:before, .burger:after {
+.nav__link:before, .phone__link:after, .phone__link:before, .burger:before, .burger:after {
   position: absolute;
   content: "";
 }
@@ -1022,7 +1029,7 @@ button.swiper-pagination-bullet {
 html,
 body {
   height: 100%;
-  scrollbar-color: #010101 #FFF;
+  scrollbar-color: #111111 #fff;
   scrollbar-width: thin;
   font-family: "Circe", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
@@ -1068,7 +1075,7 @@ p {
 a {
   font-family: "Circe", "Arial", "Helvetica", sans-serif;
   text-decoration: none;
-  color: #010101;
+  color: #fff;
 }
 
 a:focus {
@@ -1110,7 +1117,7 @@ a:focus {
 
 .main-title {
   font-size: calc(28px + 20 * ((100vw - 320px) / 1200));
-  color: #FFF;
+  color: #E4E3E3;
   font-weight: 700;
   line-height: 1.3em;
   letter-spacing: 0.02em;
@@ -1133,7 +1140,7 @@ a:focus {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
-  background-color: #010101;
+  background-color: #111111;
 }
 
 .button-up {
@@ -1158,8 +1165,8 @@ a:focus {
   height: 40px;
   padding: 0;
   border-radius: 3px;
-  border: 2px solid #010101;
-  background: #FFF;
+  border: 2px solid #111111;
+  background: #fff;
   opacity: 0.8;
   transition: all 0.5s ease-out;
 }
@@ -1175,7 +1182,7 @@ a:focus {
 @media (hover: hover) and (pointer: fine) {
   .button-up__btn:hover {
     cursor: pointer;
-    background: #010101;
+    background: #111111;
     transform: translateY(-2px);
   }
   .button-up__btn:hover:after {
@@ -1204,8 +1211,8 @@ a:focus {
 }
 
 .button_black {
-  color: #FFF;
-  background-color: #010101;
+  color: #fff;
+  background-color: #C52917;
   transition: all 0.5s ease-out;
 }
 @media (any-hover: hover) and (pointer: fine) {
@@ -1225,6 +1232,31 @@ a:focus {
   color: #1c1c1c;
 }
 
+.social__list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+}
+.social__link_vk {
+  background-color: #3648FF;
+}
+.social__link_wa {
+  background-color: #00FC75;
+}
+.social__link > img {
+  max-width: 100%;
+}
+
 .burger {
   display: none;
   position: relative;
@@ -1241,7 +1273,7 @@ a:focus {
   top: 50%;
   width: 100%;
   height: 3px;
-  background: #010101;
+  background: #fff;
   transform: translateY(-50%);
   transition: opacity 0.3s ease-in-out;
 }
@@ -1249,7 +1281,7 @@ a:focus {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #010101;
+  background: #fff;
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
 }
 .burger:before {
@@ -1320,7 +1352,7 @@ a:focus {
   top: 50%;
   width: 100%;
   height: 3px;
-  background: #010101;
+  background: #fff;
   transform: translateY(-50%);
   transition: opacity 0.3s ease-in-out;
 }
@@ -1328,7 +1360,7 @@ a:focus {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #010101;
+  background: #fff;
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
 }
 .burger:before {
@@ -1361,7 +1393,7 @@ a:focus {
     height: 100%;
     top: 0;
     left: 0;
-    background: #FFF;
+    background: #111111;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -1389,7 +1421,8 @@ a:focus {
   width: 100%;
   top: 0;
   left: 0;
-  background: #FFF;
+  color: #fff;
+  background: #111111;
   box-shadow: 0 4px 7px -5px rgba(1, 1, 1, 0.5);
   opacity: 0.8;
   transition: transform 0.8s ease;
@@ -1405,16 +1438,32 @@ a:focus {
 .navigation__logo {
   flex: 0 1 auto;
 }
-.navigation__btn-link {
-  padding: 1em;
-  border-radius: 0;
-}
-.navigation__phone {
+.navigation__block {
   flex: 0 1 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 20px;
+}
+.navigation__phone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
   padding: 1em 0;
+}
+.navigation__phone > p {
+  margin: 5px 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1em;
+  text-align: right;
+}
+.navigation__worktime > p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1em;
 }
 
 .nav {
@@ -1442,12 +1491,15 @@ a:focus {
   left: 20px;
   width: 0;
   height: 2px;
-  background: #010101;
-  transition: width 0.5s ease-in-out;
+  background: #C52917;
+  transition: width 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 @media (min-width: 770px) {
+  .nav__link:hover {
+    color: #C52917;
+  }
   .nav__link:hover:before {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -1469,10 +1521,13 @@ a:focus {
   left: 33px;
   width: 0;
   height: 2px;
-  background: #010101;
+  background: #C52917;
   transition: width 0.5s ease-in-out;
 }
 @media (min-width: 770px) {
+  .phone__link:hover {
+    color: #C52917;
+  }
   .phone__link:hover:before {
     width: 85%;
   }
@@ -1515,7 +1570,7 @@ a:focus {
     cursor: pointer;
   }
   .button-dawn__btn:hover:after {
-    background: url("../../assets/images/icon/arrow-down-hover.svg") center center/contain no-repeat;
+    opacity: 0.6;
   }
 }
 
@@ -1542,15 +1597,7 @@ a:focus {
 }
 
 .fullscreen {
-  background: #ccc url("../assets/images/example.jpg") top center/cover no-repeat fixed;
-}
-.fullscreen:before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #010101;
-  opacity: 0.2;
+  background: #ccc url("../assets/images/bg-main.jpg") top center/cover no-repeat fixed;
 }
 .fullscreen__wrapper {
   position: relative;
@@ -1562,7 +1609,7 @@ a:focus {
   margin-bottom: 0.5em;
 }
 .fullscreen__main-title > span {
-  color: #010101;
+  color: #C52917;
 }
 .fullscreen__subtitle {
   font-size: calc(18px + 2 * ((100vw - 320px) / 1200));
@@ -1631,11 +1678,12 @@ a:focus {
 
 .main {
   flex: 1 1 auto;
+  height: 5000px;
 }
 
 .footer {
   padding: 2em 0;
-  background-color: #010101;
+  background-color: #111111;
 }
 .footer__wrapper {
   display: flex;
@@ -1643,7 +1691,7 @@ a:focus {
   align-items: center;
 }
 .footer__logo-link {
-  color: #FFF;
+  color: #fff;
 }
 .footer__social {
   display: flex;
