@@ -6,7 +6,9 @@
 
 }
 
-@media screen and (max-width: 989.98px) {}
+@media screen and (max-width: 989.98px) {
+
+}
 
 @media screen and (max-width: 769.98px) {
   .navigation {
@@ -55,18 +57,16 @@
 }
 
 @media screen and (max-width: 569.98px) {
-  .header {
+  .logo {
+    width: 60px;
+  }
 
+  .header {
     &__navigation {
     }
-
   }
 
   .navigation {
-
-    &__wrapper {
-
-    }
 
     &__logo {
 
@@ -92,21 +92,8 @@
   }
 
   .fullscreen {
-    background: #ccc url('../assets/images/bg-mob-fullscreen.jpg') top center / cover no-repeat;
+    background-attachment: scroll;
 
-    &__wrapper {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-    }
-  }
-
-  .button-dawn {
-    &__btn {
-      &:after {
-        background: url("../assets/images/icon/arrow-down-hover.svg") center center / contain no-repeat;
-      }
-    }
   }
 }
 

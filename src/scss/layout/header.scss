@@ -1,8 +1,6 @@
 @use '../base/variable' as var;
 @use '../base/mixin' as mix;
 @use '../base/extentsions';
-@use '../modules/logo';
-@use '../modules/burger';
 
 $sizeAfterEl: 1.1em;
 .navigation {
@@ -55,8 +53,7 @@ $sizeAfterEl: 1.1em;
   &__worktime {
     &>p {
       margin: 0;
-      font-weight: 400;
-      font-size: 15px;
+      @include mix.adaptivFont(15, 5);
       line-height: 1em;
     }
   }
@@ -69,13 +66,17 @@ $sizeAfterEl: 1.1em;
     @include mix.displayFlex(flex, center, center);
   }
 
+  &__item-hidden {
+    display: none;
+  }
+
   &__link {
     position: relative;
     display: block;
     padding: 1em;
-    font-weight: 600;
-    font-size: #{var.$generalBigTextSize} + px;
-    line-height: var.$generalBigLineHeight;
+    font-weight: 400;
+    font-size: #{var.$generalTextSize} + px;
+    line-height: var.$generalLineHeight;
     transition: text-decoration .8s ease;
 
     &:before {
@@ -88,7 +89,7 @@ $sizeAfterEl: 1.1em;
       transition: width .5s ease-in-out, color .5s ease-in-out;
     }
 
-    @media (min-width: 770px) {
+    @media (any-hover: hover) {
       &:hover{
         color: var.$accentColor;
         &:before {
@@ -103,8 +104,8 @@ $sizeAfterEl: 1.1em;
   &__link {
     position: relative;
     padding-left: 1.5em;
-    font-weight: 600;
-    font-size: #{var.$generalBigTextSize} + px;
+    font-weight: 400;
+    @include mix.adaptivFont(var.$generalTextSize, var.$generalTextSizeMin);
 
     &:after {
       @extend %pseudoElement;
@@ -125,13 +126,13 @@ $sizeAfterEl: 1.1em;
       transition: width .5s ease-in-out;
     }
 
-    @media (min-width: 770px) {
-      &:hover{
-        color: var.$accentColor;
-        &:before {
-          width: 85%;
+    @media (any-hover: hover) {
+        &:hover {
+          color: var.$accentColor;
+          &:before {
+            width: 85%;
+          }
         }
-      }
     }
   }
 }

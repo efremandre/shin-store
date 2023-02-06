@@ -1,5 +1,5 @@
 @use 'base/variable' as var;
-@use "base/mixin" as mix;
+@use 'base/mixin' as mix;
 @use 'base/extentsions';
 
 html,
@@ -16,6 +16,7 @@ body {
 }
 
 * img {
+	display: block;
 	max-width: 100%;
 }
 
@@ -77,15 +78,6 @@ a:focus {
 	max-width: #{var.$widthContainer + px};
 	margin: 0 auto;
 	padding: 0 1.3em;
-}
-
-.logo {
-	font-family: var.$subFamily;
-	letter-spacing: var.$letterSpacing;
-	@include mix.adaptivFont(30, 18);
-	font-style: normal;
-	font-weight: 700;
-	line-height: 130%;
 }
 
 .main-section {

@@ -10,8 +10,8 @@
 
   &__link {
     @include mix.displayFlex(flex, center, center);
-    width: 40px;
-    height: 40px;
+    width: 2em;
+    height: 2em;
     border-radius: 5px;
     color: var.$lightColor;
 
