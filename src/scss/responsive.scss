@@ -94,6 +94,51 @@
   .fullscreen {
     background-attachment: scroll;
 
+    &__wrapper {
+    }
+
+    &__main-title {
+    }
+
+    &__subtitle {
+
+    }
+
+    &__buttons {
+      width: 100%;
+      gap: 15px;
+    }
+
+    &__button {
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  .fullscreen {
+    background-attachment: scroll;
+
+    &__wrapper {
+    }
+
+    &__main-title {
+    }
+
+    &__subtitle {
+
+    }
+
+    &__buttons {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    &__button {
+
+    }
   }
 }
 
@@ -103,57 +148,7 @@
     padding: 0 0.5em;
   }
 
-  .price {
 
-    &__subtitle {
-    }
-
-    &__grid {
-
-    }
-
-    &__cart {
-
-    }
-
-    &__title {
-
-    }
-
-    &__description-wrapper {
-      padding: 0;
-    }
-
-    &__description {
-      padding: 1em 1em 1em 1.7em;
-    }
-
-    &__list {
-
-      & > li {
-
-      }
-    }
-
-    &__other-description {
-
-      & > p {
-
-      }
-
-      & > p:last-child {
-
-      }
-    }
-
-    &__button {
-
-    }
-
-    &__button-btn {
-      max-width: 100%;
-    }
-  }
 }
 
 @media (any-hover: none) and (orientation: landscape) {

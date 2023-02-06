@@ -7,6 +7,7 @@ $sizeAfterEl: 1.1em;
   position: fixed;
   z-index: 9998;
   width: 100%;
+  box-sizing: border-box;
   top: 0;
   left: 0;
   color: var.$lightColor;
@@ -21,6 +22,7 @@ $sizeAfterEl: 1.1em;
 
   &__wrapper {
     @include mix.displayFlex(flex, space-between, center);
+    box-sizing: border-box;
   }
 
   &__logo {
@@ -81,8 +83,8 @@ $sizeAfterEl: 1.1em;
 
     &:before {
       @extend %pseudoElement;
-      bottom: 20px;
-      left: 20px;
+      bottom: 15px;
+      left: 18px;
       width: 0;
       height: 2px;
       background: var.$accentColor;
@@ -93,7 +95,7 @@ $sizeAfterEl: 1.1em;
       &:hover{
         color: var.$accentColor;
         &:before {
-          width: 80%;
+          width: 70%;
         }
       }
     }

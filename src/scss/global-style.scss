@@ -75,6 +75,8 @@ a:focus {
 }
 
 .container {
+	width: 100%;
+	box-sizing: border-box;
 	max-width: #{var.$widthContainer + px};
 	margin: 0 auto;
 	padding: 0 1.3em;
@@ -91,4 +93,12 @@ a:focus {
 	line-height: var.$titleHeight;
 	letter-spacing: var.$letterSpacing;
 	text-transform: var.$titleTransform;
+}
+
+.red {
+	color: var.$accentColor;
+}
+
+.green {
+	color: var.$accentColorTwo;
 }

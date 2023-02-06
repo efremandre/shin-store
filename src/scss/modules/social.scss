@@ -14,6 +14,14 @@
     height: 2em;
     border-radius: 5px;
     color: var.$lightColor;
+    transition: opacity .5s ease-out, transform .5s ease-out;
+
+    @media (any-hover: hover) {
+        &:hover {
+          transform: translateY(-2px);
+          opacity: .7;
+        }
+    }
 
     &_vk {
       background-color: #3648FF;
