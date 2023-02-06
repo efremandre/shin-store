@@ -1536,6 +1536,34 @@ a:focus {
   padding: 1.7em 0;
 }
 
+.whyme__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -1em;
+}
+.whyme__card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1em;
+}
+.whyme__wrapper-image {
+  width: 100%;
+  max-width: 240px;
+}
+.whyme__content {
+  text-align: center;
+}
+.whyme__subtitle {
+  font-size: calc(18px + 2 * ((100vw - 320px) / 1200));
+  margin: 0 0 0.5em;
+}
+.whyme__description {
+  margin-bottom: 1em;
+}
+
 .main__feedback {
   padding: 1.7em 0;
 }
@@ -1758,6 +1786,14 @@ a:focus {
   .fullscreen__buttons {
     align-items: start;
     flex-direction: column;
+  }
+  .whyme__wrapper {
+    display: block;
+    margin: 0;
+  }
+  .whyme__card {
+    max-width: 150px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 320px) {

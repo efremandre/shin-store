@@ -151,6 +151,34 @@
 
     }
   }
+
+  .whyme {
+    &__wrapper {
+      display: block;
+      margin: 0;
+    }
+
+    &__card {
+        max-width: 150px;
+      margin: 0 auto;
+    }
+
+    &__wrapper-image {
+
+    }
+
+    &__content {
+
+    }
+
+    &__subtitle {
+
+    }
+
+    &__description {
+
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
