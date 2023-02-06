@@ -1,0 +1,37 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+@use '../modules/button-dawn';
+
+.main__tyermont {
+  padding: 1.7em 0;
+}
+
+.tyermont {
+
+  background: #818181 url(../../assets/images/bg-tyermont.jpg) right center / cover no-repeat fixed;
+
+  &__row {
+    @include mix.displayFlex(flex, end, center);
+    min-height: 60vh;
+  }
+
+  &__wrapper {
+    width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  &__description {
+    color: var.$lightColor;
+    margin-bottom: 1em;
+
+  }
+
+  &__button {
+    margin-top: 1.5em;
+  }
+}

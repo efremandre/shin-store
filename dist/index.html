@@ -51,9 +51,9 @@
                         </div>
                         <nav class="navigation__nav nav" data-nav>
                             <ul class="nav__list">
-                                <li><a href="#about" class="nav__link">Каталог</a></li>
-                                <li><a href="#catalog" class="nav__link">Услуги</a></li>
-                                <li><a href="#service" class="nav__link">Отзывы</a></li>
+                                <li><a href="#catalog" class="nav__link">Каталог</a></li>
+                                <li><a href="#service" class="nav__link">Услуги</a></li>
+                                <li><a href="#feedback" class="nav__link">Отзывы</a></li>
                                 <li><a href="#contact" class="nav__link">Контакты</a></li>
                                 <li class="nav__item-hidden"><a href="tel:+79298424232" class="nav__link">+7 (929) 842-42-32</a></li>
                             </ul>
@@ -109,26 +109,30 @@
             <section class="main__brands brands">
                 <div class="container animation">
                     <h2 class="brands__title subtitle">Работаем с брендами</h2>
-                    <div class="brands__wrapper-image"><img src="./assets/images/brands/aeolus.jpg" alt="Aeolus" title="Aeolus" width="200" class="brands__image"></div>
-                    <div class="brands__wrapper-image"><img src="./assets/images/brands/falken.jpg" alt="Falken" title="Falken" width="200" class="brands__image"></div>
-                    <div class="brands__wrapper-image"><img src="./assets/images/brands/kama.jpg" alt="Kama" title="Kama" width="200" class="brands__image"></div>
-                    <div class="brands__wrapper-image"><img src="./assets/images/brands/michelin.jpg" alt="Michelin" title="Michelin" width="200" class="brands__image"></div>
+                    <div class="brands__wrapper">
+                        <div class="brands__wrapper-image"><img src="./assets/images/brands/aeolus.jpg" alt="Aeolus" title="Aeolus" width="200" class="brands__image"></div>
+                        <div class="brands__wrapper-image"><img src="./assets/images/brands/falken.jpg" alt="Falken" title="Falken" width="200" class="brands__image"></div>
+                        <div class="brands__wrapper-image"><img src="./assets/images/brands/kama.jpg" alt="Kama" title="Kama" width="200" class="brands__image"></div>
+                        <div class="brands__wrapper-image"><img src="./assets/images/brands/michelin.jpg" alt="Michelin" title="Michelin" width="200" class="brands__image"></div>
+                    </div>
                 </div>
             </section>
-            <section class="main__catalog catalog">
+            <section id="catalog" class="main__catalog catalog">
                 <div class="container animation">
                     <h2 class="catalog__title subtitle">Каталог</h2>
                 </div>
             </section>
-            <section class="main__tyermont tyermont">
+            <section id="service" class="main__tyermont tyermont">
                 <div class="container animation">
-                    <div class="tyermont__wrapper">
-                        <h2 class="tyermont__title subtitle">Шиномонтаж</h2>
-                        <p class="tyermont__description">Профессионально и быстро проведем комплекс работ по замене покрышек на
-                            вашей машине.</p>
-                        <p class="tyermont__description">Для комфортного ожидания предусмотрена зона с кофе и чаем, игровой
-                            приставкой и бесплатным Wi-Fi.</p>
-                        <a href="https://wa.me/79298424232" class="tyermont__button button">Узнать подробнее</a>
+                    <div class="tyermont__row">
+                        <div class="tyermont__wrapper">
+                            <h2 class="tyermont__title subtitle"><span class="red">Шино</span><span class="green">монтаж</span></h2>
+                            <p class="tyermont__description">Профессионально и быстро проведем комплекс работ по замене покрышек на
+                                вашей машине.</p>
+                            <p class="tyermont__description">Для комфортного ожидания предусмотрена зона с кофе и чаем, игровой
+                                приставкой и бесплатным Wi-Fi.</p>
+                            <a href="https://wa.me/79298424232" class="tyermont__button button">Узнать подробнее</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -160,7 +164,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__feedback feedback">
+            <section id="feedback" class="main__feedback feedback">
                 <div class="container animation">
                     <h2 class="feedback__title subtitle">Отзывы</h2>
                     <div class="feedback__wrapper">
@@ -204,7 +208,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__contact contact">
+            <section id="contact" class="main__contact contact">
                 <div class="container animation">
                     <h2 class="contact__title subtitle">Контакты</h2>
                     <div class="contact__wrapper">
@@ -226,7 +230,7 @@
                                 <div class="contact__form form-container">
                                     <div class="note"></div>
                                     <div class="contact__form form">
-                                        <form class="ajax-contact-form " action="POST">
+                                        <form class="ajax-contact-form " action="#">
                                             <div class="form__input">
                                                 <input type="text" name="name" value="name" placeholder="Ваше имя">
                                             </div>

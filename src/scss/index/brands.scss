@@ -1,0 +1,21 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+@use '../modules/button-dawn';
+
+.main__brands {
+  padding: 1.7em 0;
+}
+
+.brands {
+  &__title {
+    margin-bottom: 1em;
+  }
+
+  &__wrapper {
+    @include mix.displayFlex(flex, space-between, center);
+    gap: 15px;
+  }
+
+  &__wrapper-image{}
+}

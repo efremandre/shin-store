@@ -3,9 +3,6 @@
 @use '../../node_modules/swiper/swiper-bundle.min.css';
 @use './fonts.scss';
 @use 'global-style';
-@use './layout/header';
-@use './index/main';
-@use './layout/footer';
 @use './modules/scroll-animation';
 @use './modules/scrollbar';
 @use './modules/button-up';
@@ -13,5 +10,8 @@
 @use './modules/subtitle';
 @use './modules/social';
 @use './modules/logo';
+@use './layout/header';
+@use './index/main';
+@use './layout/footer';
 @use './modules/burger';
 @use 'responsive';

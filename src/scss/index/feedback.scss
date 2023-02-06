@@ -1,0 +1,8 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+@use '../modules/button-dawn';
+
+.main__feedback {
+  padding: 1.7em 0;
+}

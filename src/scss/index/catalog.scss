@@ -1,0 +1,12 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+@use '../modules/button-dawn';
+
+.main__catalog {
+  padding: 1.7em 0;
+}
+
+.catalog {
+  min-height: 100vh;
+}

@@ -114,6 +114,17 @@
     }
   }
 
+  .tyermont {
+    background-attachment: scroll;
+
+    &__row {
+      @include mix.displayFlex(flex, start, center);
+    }
+
+    &__wrapper {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 430px) {
