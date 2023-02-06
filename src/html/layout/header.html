@@ -1,0 +1,25 @@
+<header class="header">
+	<div data-header class="header__navigation navigation">
+				<div class="container">
+					<div class="navigation__wrapper">
+					@@include('../modules/logo.html', {
+						'class-wrapper': 'navigation__logo',
+						'class-logo-link': 'navigation__logo-link'
+						})
+						<nav class="navigation__nav nav" data-nav>
+							<ul class="nav__list">
+								<li><a href="#aboutme" class="nav__link">Пункт 1</a></li>
+								<li><a href="#portfolio" class="nav__link">Пункт 2</a></li>
+								<li><a href="#price" class="nav__link">Пункт 3</a></li>
+							</ul>
+						</nav>
+						<div class="navigation__block">
+							<div class="navigation__phone phone">
+								<a href="tel:" class="phone__link">+7(999) 999 99 99</a>
+							</div>
+							@@include('../modules/burger.html', {})
+						</div>
+					</div>
+				</div>
+			</div>
+</header>

@@ -1,0 +1,113 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+@use '../modules/logo';
+@use '../modules/burger';
+
+$sizeAfterEl: 1.1em;
+.navigation {
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var.$mainBg;
+  box-shadow: 0 4px 7px -5px rgba(1, 1, 1, 0.5);
+  opacity: .8;
+  transition: transform .8s ease;
+
+  &._hidden {
+    transform: translateY(-90%);
+  }
+
+  &__wrapper {
+    @include mix.displayFlex(flex, space-between, center);
+  }
+
+  &__logo {
+    flex: 0 1 auto;
+  }
+
+  &__btn-link {
+    padding: 1em;
+    border-radius: 0;
+  }
+
+  &__phone {
+    flex: 0 1 auto;
+    @include mix.displayFlex(flex, flex-end, center);
+    padding: 1em 0;
+  }
+}
+
+.nav {
+  flex: 1 1 auto;
+  @include mix.displayFlex(flex, center, center);
+  &__list {
+    @include mix.displayFlex(flex, center, center);
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 1em;
+    font-weight: 600;
+    font-size: #{var.$generalBigTextSize} + px;
+    line-height: var.$generalBigLineHeight;
+    transition: text-decoration .8s ease;
+
+    &:before {
+      @extend %pseudoElement;
+      bottom: 20px;
+      left: 20px;
+      width: 0;
+      height: 2px;
+      background: var.$accentColor;
+      transition: width .5s ease-in-out;
+    }
+
+    @media (min-width: 770px) {
+      &:hover{
+        &:before {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+.phone {
+  &__link {
+    position: relative;
+    padding-left: 1.5em;
+    font-weight: 600;
+    font-size: #{var.$generalBigTextSize} + px;
+
+    &:after {
+      @extend %pseudoElement;
+      top: calc(50% - ($sizeAfterEl / 2));
+      left: 0;
+      width: $sizeAfterEl;
+      height: $sizeAfterEl;
+      background: url('../../../assets/images/icon/phone.svg') center center / contain no-repeat;
+    }
+
+    &:before {
+      @extend %pseudoElement;
+      bottom: 0;
+      left: 33px;
+      width: 0;
+      height: 2px;
+      background: var.$accentColor;
+      transition: width .5s ease-in-out;
+    }
+
+    @media (min-width: 770px) {
+      &:hover{
+        &:before {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
