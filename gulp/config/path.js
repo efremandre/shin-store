@@ -13,6 +13,7 @@ export const path = {
 		images: `${buildFolder}/assets/images/`,
 		fonts: `${buildFolder}/assets/fonts/`,
 		files: `${buildFolder}/files/`,
+		vendor: `${buildFolder}/vendor/`,
 	},
 	src: {
 		html: `${srcFolder}/*.html`,
@@ -21,6 +22,7 @@ export const path = {
 		images: `${srcFolder}/assets/images/**/*.{jpg,png,jpeg,gif,webp,ico}`,
 		svg: `${srcFolder}/assets/images/**/*.svg`,
 		files: `${srcFolder}/files/**/*.*`,
+		vendor: `${srcFolder}/vendor/**/*.*`,
 	},
 	watch: {
 		html: `${srcFolder}/**/*.html`,
@@ -28,6 +30,7 @@ export const path = {
 		js: `${srcFolder}/js/**/*.js`,
 		images: `${srcFolder}/assets/images/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
 		files: `${srcFolder}/files/**/*.*`,
+		vendor: `${srcFolder}/vendor/**/*.*`,
 	},
 	clean: buildFolder,
 	buildFolder: buildFolder,

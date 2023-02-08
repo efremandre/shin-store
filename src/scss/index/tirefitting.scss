@@ -3,12 +3,15 @@
 @use '../base/extentsions';
 @use '../modules/button-dawn';
 
-.main__tyermont {
+.main__tirefitting {
   padding: 1.7em 0;
 }
 
-.tyermont {
-  background: #818181 url(../../assets/images/bg-tyermont.jpg) right center / cover no-repeat fixed;
+.tirefitting {
+  background: #818181 url(../../assets/images/bg-tirefitting.jpg) right center / cover no-repeat;
+  @media (any-hover: hover) {
+    background-attachment: fixed;
+  }
 
   &__row {
     @include mix.displayFlex(flex, end, center);

@@ -3,6 +3,7 @@
 
 .button {
   @include mix.displayFlex(flex, center, center);
+  box-sizing: border-box;
   width: 100%;
   max-width: 270px;
   padding: 1em;

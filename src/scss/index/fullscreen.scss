@@ -14,7 +14,10 @@
 .fullscreen {
   @include mix.displayFlex(flex, start, center);
   min-height: 100vh;
-  background: #ccc url('../../../assets/images/bg-main.jpg') top center / cover no-repeat fixed;
+  background: #ccc url('../../assets/images/bg-main.jpg') top center / cover no-repeat;
+  @media (any-hover: hover) {
+    background-attachment: fixed;
+  }
 
   &__wrapper {
     @include mix.displayFlex(flex, center, flex-start);

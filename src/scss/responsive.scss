@@ -54,56 +54,40 @@
       }
     }
   }
+
+  .contact {
+
+    &__wrapper {
+      flex-wrap: wrap-reverse;
+    }
+
+    &__contact-block {
+      flex: 0 1 100%;
+    }
+
+    &__map-block {
+      flex: 0 1 100%;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 569.98px) {
+  .container {
+    padding: 0 1em;
+  }
+
   .logo {
     width: 60px;
   }
 
-  .header {
-    &__navigation {
-    }
-  }
-
   .navigation {
-
-    &__logo {
-
-    }
-
-    &__logo-link {
-
-    }
-
-    &__nav {
-    }
-
     &__phone {
       display: none;
-    }
-
-    &__icon {
-    }
-
-    &__link {
-
     }
   }
 
   .fullscreen {
-    background-attachment: scroll;
-
-    &__wrapper {
-    }
-
-    &__main-title {
-    }
-
-    &__subtitle {
-
-    }
-
     &__buttons {
       width: 100%;
       gap: 15px;
@@ -114,41 +98,69 @@
     }
   }
 
-  .tyermont {
-    background-attachment: scroll;
+  .tirefitting {
 
     &__row {
       @include mix.displayFlex(flex, start, center);
+
     }
 
     &__wrapper {
       width: 100%;
     }
   }
+
+  .feedback {
+    &__slider-container {
+      width: 100%;
+    }
+
+    &__slider {
+      padding-bottom: 40px;
+    }
+
+    &__wrapper-slide {
+      padding: 1em;
+    }
+
+    &__next,
+    &__prev {
+      display: none;
+    }
+
+    &__text {
+      @include mix.adaptivFont(var.$generalBigTextSize, var.$generalBigTextSizeMin);
+    }
+
+    &__link {
+      display: block;
+      text-align: right;
+      color: var.$generalColorText;
+      @include mix.adaptivFont(14, 10);
+      text-decoration: underline;
+
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .contact {
+    &__map {
+      height: 400px;
+    }
+  }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 429.98px) {
 
   .fullscreen {
-    background-attachment: scroll;
-
-    &__wrapper {
-    }
-
-    &__main-title {
-    }
-
-    &__subtitle {
-
-    }
 
     &__buttons {
       align-items: start;
       flex-direction: column;
-    }
-
-    &__button {
-
     }
   }
 
@@ -159,35 +171,16 @@
     }
 
     &__card {
-        max-width: 150px;
+      max-width: 150px;
       margin: 0 auto;
-    }
-
-    &__wrapper-image {
-
-    }
-
-    &__content {
-
-    }
-
-    &__subtitle {
-
-    }
-
-    &__description {
-
     }
   }
 }
 
-@media screen and (max-width: 320px) {
-
+@media screen and (max-width: 319.98px) {
   .container {
     padding: 0 0.5em;
   }
-
-
 }
 
 @media (any-hover: none) and (orientation: landscape) {

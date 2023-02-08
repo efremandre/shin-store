@@ -1,48 +1,52 @@
 <section id="contact" class="main__contact contact">
     <div class="container animation">
-        <h2 class="contact__title subtitle">Контакты</h2>
-        <div class="contact__wrapper">
-            <div class="contact__contact-block">
-                <div class="contact__item">
-                    <p>Воспользуйтесь контактными данными или оставьте свои и мы перезвоним в ближайшее время.</p>
-                    <p>Наш телефон:  <a href="tel:+79298424232" class="contact__phone" title="Телефон Шин.Store">+7 (929) 842-42-32</a></p>
+        <div class="contact__row">
+            <h2 class="contact__title subtitle">Контакты</h2>
+            <div class="contact__wrapper">
+                <div class="contact__contact-block">
+                    <p class="contact__contact-description">Свяжитесь с нами или оставьте свои контакты и мы перезвоним.</p>
+<!--                    <p class="contact__contact-description" >Наш телефон:  <a href="tel:+79298424232" class="contact__phone" title="Телефон Шин.Store">+7 (929) 842-42-32</a></p>-->
                     <div class="contact__social social">
                         <ul class="social__list">
-                            <li><a id="link-wa" href="https://wa.me/79298424232" class="social__link social__link_wa"><img src="../../assets/images/icon/wa.svg" alt="WhatsApp" title="Шин.Store WhatsApp"></a>
-                                <label for="link-wa">Написать в WhatsApp</label>
+                            <li >
+                                <a class="social__item" href="https://wa.me/79298424232">
+                                    <span class="social__link social__link_wa"><img src="../../assets/images/icon/wa.svg" alt="WhatsApp" title="Шин.Store WhatsApp"></span>
+                                    <p>Написать<br>в WhatsApp</p>
+                                </a>
                             </li>
                             <li>
-                                <a id="link-vk" href="https://vk.com/public217987026" class="social__link social__link_vk"><img src="../../assets/images/icon/vk.svg" alt="VKontakte" title="Шин.Store VKontakte"></a>
-                                <label for="link-vk">Написать во ВКонтакте</label>
+                                <a class="social__item" href="https://vk.com/public217987026">
+                                    <span class="social__link social__link_vk">
+                                        <img src="../../assets/images/icon/vk.svg" alt="VKontakte" title="Шин.Store VKontakte">
+                                    </span>
+                                    <p>Написать<br>во ВКонтакте</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="contact__form form-container">
+                    <div class="contact__form-container form-container">
                         <div class="note"></div>
-                        <div class="contact__form form">
-                            <form class="ajax-contact-form " action="#">
-                                <div class="form__input">
-                                    <input type="text" name="name" value="name" placeholder="Ваше имя">
-                                </div>
-                                <div class="form__input">
-                                    <input type="tel" name="tel" value="tel" placeholder="Ваш телефон" required>
-                                </div>
-                                <div class="form__check">
-                                    <input id="checkPersonal" name="personal" type="checkbox" checked required>
-                                    <label for="checkPersonal">Подтверждаю согласие на обработку персональных данных</label>
-                                </div>
-                                <div class="column">
-                                    <textarea name="message" cols="40" rows="3" class="message" placeholder="Ваш вопрос..."></textarea>
-                                </div>
-                                <button class="contact__button button button_accent">Отправить</button>
-                            </form>
-                            <div class="callback-text"></div>
-                        </div>
+                        <form class="ajax-contact-form contact__form form" action="#">
+                            <div class="form__input">
+                                <input id="name" type="text" name="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="form__input">
+                                <input id="tel" type="tel" name="tel" placeholder="Ваш телефон" required>
+                            </div>
+                            <div class="form__check">
+                                <input id="checkPersonal" name="personal" type="checkbox" checked required>
+                                <label for="checkPersonal">Подтверждаю согласие на обработку персональных данных</label>
+                            </div>
+                            <div class="form__input">
+                                <textarea id="message" name="message" cols="40" rows="3" class="message" placeholder="Сообщение..."></textarea>
+                            </div>
+                            <button class="contact__button button button_accent">Отправить</button>
+                        </form>
                     </div>
                 </div>
-            </div>
-            <div class="contact__map-block">
-                <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=104146995693" width="560" height="400" frameborder="0"></iframe>
+                <div class="contact__map-block">
+                    <iframe class="contact__map" src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=104146995693" width="500" height="500" frameborder="0"></iframe>
+                </div>
             </div>
         </div>
     </div>

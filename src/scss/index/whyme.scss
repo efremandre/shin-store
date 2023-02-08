@@ -8,6 +8,10 @@
 }
 
 .whyme {
+  &__title {
+    margin-bottom: .5em;
+  }
+
   &__wrapper {
     @include mix.displayFlex(flex, space-between, center);
     margin: 0 -1em;
