@@ -1021,7 +1021,7 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-style: normal;
 }
-.burger:before, .burger:after, .nav__link:before, .phone__link:after, .phone__link:before {
+.burger:before, .burger:after, .nav__link:before, .phone__link:after, .phone__link:before, .form-preloader, .form-preloader:before {
   position: absolute;
   content: "";
 }
@@ -1124,7 +1124,107 @@ a:focus {
 }
 
 .green {
-  color: #7FB13D;
+  color: rgb(127, 177, 61);
+}
+
+.form-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.form-preloader {
+  visibility: hidden;
+  opacity: 1;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.5s ease;
+}
+.form-preloader._preloader-active {
+  visibility: visible;
+  opacity: 1;
+}
+.form-preloader:before {
+  z-index: 3;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-top-color: #fff;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.form-callback {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 1em;
+  color: #111111;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 4px 2px 11px 1px rgba(1, 1, 1, 0.6);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.form-callback._form-callback-active {
+  opacity: 1;
+  transform: translateY(50px);
+}
+
+@media (any-hover: hover) {
+  .form__check > input:hover, .form__check > label:hover {
+    cursor: pointer;
+  }
+}
+.form__input {
+  position: relative;
+}
+.form__input > input, .form__input > textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-sizing: border-box;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: rgba(10, 10, 10, 0.9);
+}
+@media (any-hover: hover) {
+  .form__input > input:hover, .form__input > textarea:hover {
+    cursor: pointer;
+  }
+}
+.form__input > textarea {
+  resize: none;
+}
+.form__check {
+  font-size: calc(10px + 4 * ((100vw - 320px) / 1200));
 }
 
 .animation {
@@ -1219,7 +1319,7 @@ a:focus {
 }
 
 .button_accent {
-  background-color: #7FB13D;
+  background-color: rgb(127, 177, 61);
 }
 
 .subtitle {
@@ -1489,6 +1589,22 @@ a:focus {
 .fullscreen__button {
   box-sizing: border-box;
 }
+@media (any-hover: none) {
+  .fullscreen__button_order-call {
+    display: none;
+  }
+  .fullscreen__button_call {
+    display: flex;
+  }
+}
+@media (any-hover: hover) {
+  .fullscreen__button_order-call {
+    display: flex;
+  }
+  .fullscreen__button_call {
+    display: none;
+  }
+}
 
 .main__brands {
   padding: 1.7em 0;
@@ -1739,38 +1855,6 @@ a:focus {
   display: block;
   width: 100%;
   box-shadow: 0 4px 10px 0 rgba(80, 80, 80, 0.2);
-}
-
-@media (any-hover: hover) {
-  .form__check > input:hover, .form__check > label:hover {
-    cursor: pointer;
-  }
-}
-.form__input {
-  position: relative;
-}
-.form__input > input, .form__input > textarea {
-  width: 100%;
-  margin-bottom: 1em;
-  padding: 1em;
-  box-sizing: border-box;
-  color: #fff;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: rgba(10, 10, 10, 0.9);
-}
-@media (any-hover: hover) {
-  .form__input > input:hover, .form__input > textarea:hover {
-    cursor: pointer;
-  }
-}
-.form__input > textarea {
-  resize: none;
-}
-.form__check {
-  font-size: calc(10px + 4 * ((100vw - 320px) / 1200));
 }
 
 .social__item {

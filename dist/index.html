@@ -98,7 +98,8 @@
                             Свяжитесь с нами, проконсультируем и поможем с выбором.</p>
                         <div class="fullscreen__buttons">
                             <a title="Написать Шин.Store в WhatsApp" href="https://wa.me/79298424232" class="fullscreen__button button">Напишите нам</a>
-                            <button title="Закажите звонок Шин.Store" class="fullscreen__button button button_accent">Закажите звонок</button>
+                            <a title="Закажите звонок Шин.Store" href="#contact" class="fullscreen__button fullscreen__button_order-call button button_accent">Закажите звонок</a>
+                            <a title="Позвонить Шин.Store" href="tel:+79298424232" class="fullscreen__button button fullscreen__button_call button_accent">Позвоните нам</a>
                         </div>
                     </div>
                 </div>
@@ -343,13 +344,13 @@
                                     </ul>
                                 </div>
                                 <div class="contact__form-container form-container">
-                                    <div class="note"></div>
+                                    <div class="form-preloader"></div>
                                     <form class="ajax-contact-form contact__form form" action="#">
                                         <div class="form__input">
                                             <input id="name" type="text" name="name" placeholder="Ваше имя">
                                         </div>
                                         <div class="form__input">
-                                            <input id="tel" type="tel" name="tel" placeholder="Ваш телефон" required>
+                                            <input id="tel" type="tel" name="tel" placeholder="Ваш телефон" required data-phone-pattern>
                                         </div>
                                         <div class="form__check">
                                             <input id="checkPersonal" name="personal" type="checkbox" checked required>
@@ -368,6 +369,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-callback"></div>
             </section>
             <div data-modal-image class="modal">
                 <div class="modal-button">

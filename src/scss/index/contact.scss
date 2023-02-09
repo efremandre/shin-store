@@ -67,50 +67,6 @@
   }
 }
 
-.form {
-  &__check {
-    &>input,
-    &>label {
-      @media (any-hover: hover) {
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  &__input {
-    position: relative;
-    &>input,
-    &>textarea {
-      width: 100%;
-      margin-bottom: 1em;
-      padding: 1em;
-      box-sizing: border-box;
-      color: var.$lightColor;
-      outline: none;
-      border-radius: 5px;
-      border: none;
-      border-bottom: 1px solid #fff;
-      background: rgba(10, 10, 10, 0.9);
-
-      @media (any-hover: hover) {
-          &:hover {
-            cursor: pointer;
-          }
-      }
-    }
-
-    &>textarea {
-      resize: none;
-    }
-  }
-
-  &__check {
-    @include mix.adaptivFont(14, 10)
-  }
-}
-
 .social__item {
   @include mix.displayFlex(flex, start, center);
   margin-right: 20px;

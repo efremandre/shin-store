@@ -25,13 +25,13 @@
                         </ul>
                     </div>
                     <div class="contact__form-container form-container">
-                        <div class="note"></div>
+                        <div class="form-preloader"></div>
                         <form class="ajax-contact-form contact__form form" action="#">
                             <div class="form__input">
                                 <input id="name" type="text" name="name" placeholder="Ваше имя">
                             </div>
                             <div class="form__input">
-                                <input id="tel" type="tel" name="tel" placeholder="Ваш телефон" required>
+                                <input id="tel" type="tel" name="tel" placeholder="Ваш телефон" required data-phone-pattern>
                             </div>
                             <div class="form__check">
                                 <input id="checkPersonal" name="personal" type="checkbox" checked required>
@@ -50,4 +50,5 @@
             </div>
         </div>
     </div>
+    <div class="form-callback"></div>
 </section>
