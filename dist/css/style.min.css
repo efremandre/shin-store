@@ -1021,7 +1021,7 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-style: normal;
 }
-.burger:before, .burger:after, .nav__link:before, .phone__link:after, .phone__link:before, .form-preloader, .form-preloader:before {
+.burger:before, .burger:after, .nav__link:before, .phone__link:after, .form-preloader, .form-preloader:before {
   position: absolute;
   content: "";
 }
@@ -1478,20 +1478,9 @@ a:focus {
   height: 1.1em;
   background: url("../assets/images/icon/phone.svg") center center/contain no-repeat;
 }
-.phone__link:before {
-  bottom: 0;
-  left: 33px;
-  width: 0;
-  height: 2px;
-  background: #C52917;
-  transition: width 0.5s ease-in-out;
-}
 @media (any-hover: hover) {
   .phone__link:hover {
-    color: #C52917;
-  }
-  .phone__link:hover:before {
-    width: 85%;
+    text-decoration: underline;
   }
 }
 
@@ -1661,30 +1650,44 @@ a:focus {
 }
 
 .main__whyme {
-  padding: 1.7em 0;
+  padding: 2em 0 1.5em;
 }
 
 .whyme__title {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 .whyme__wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: start;
+  align-items: stretch;
   margin: 0 -1em;
 }
 .whyme__card {
+  flex: 0 1 33.333%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 0 1em;
 }
 .whyme__wrapper-image {
   width: 100%;
-  max-width: 240px;
+  height: 200px;
+  margin-bottom: 1.5em;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.whyme__wrapper-image_rest-zone {
+  background: #ccc url("../assets/images/whyme/rest-zone.jpg") center top/cover no-repeat;
+}
+.whyme__wrapper-image_experience {
+  background: #ccc url("../assets/images/whyme/experience.jpg") center top/cover no-repeat;
+}
+.whyme__wrapper-image_guarantee {
+  background: #ccc url("../assets/images/whyme/guarantee.jpg") center top/cover no-repeat;
 }
 .whyme__content {
+  flex: 1 1 auto;
   text-align: center;
 }
 .whyme__subtitle {
@@ -1693,6 +1696,8 @@ a:focus {
 }
 .whyme__description {
   margin-bottom: 1em;
+  font-size: calc(12px + 3 * ((100vw - 320px) / 1200));
+  line-height: 1.3em;
 }
 
 .main__feedback {
@@ -2036,6 +2041,17 @@ a:focus {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 989.98px) {
+  .whyme {
+    padding-bottom: 0;
+  }
+  .whyme__wrapper-image {
+    margin-bottom: 1em;
+  }
+  .whyme__card {
+    padding: 0.5em;
+  }
+}
 @media screen and (max-width: 769.98px) {
   .navigation {
     opacity: 1;
@@ -2051,6 +2067,13 @@ a:focus {
   }
   .phone__link {
     font-size: 14px;
+  }
+  .whyme {
+    padding-bottom: 0;
+  }
+  .whyme__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .contact__wrapper {
     flex-wrap: wrap-reverse;
@@ -2077,6 +2100,9 @@ a:focus {
     width: 100%;
     gap: 15px;
   }
+  .brands {
+    padding-bottom: 0;
+  }
   .tirefitting__row {
     display: flex;
     justify-content: start;
@@ -2084,6 +2110,16 @@ a:focus {
   }
   .tirefitting__wrapper {
     width: 100%;
+  }
+  .whyme {
+    padding-bottom: 0;
+  }
+  .whyme__wrapper {
+    display: block;
+    margin: 0;
+  }
+  .whyme__card {
+    padding: 0;
   }
   .feedback__slider-container {
     width: 100%;
@@ -2123,63 +2159,9 @@ a:focus {
     align-items: start;
     flex-direction: column;
   }
-  .whyme__wrapper {
-    display: block;
-    margin: 0;
-  }
-  .whyme__card {
-    max-width: 150px;
-    margin: 0 auto;
-  }
 }
 @media screen and (max-width: 319.98px) {
   .container {
     padding: 0 0.5em;
-  }
-}
-@media (any-hover: none) and (orientation: landscape) {
-  .navigation {
-    opacity: 1;
-  }
-  .navigation__wrapper {
-    justify-content: space-between;
-  }
-  .navigation__block {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 0 20px;
-  }
-  .navigation__phone {
-    padding: 0;
-  }
-  .main__fullscreen {
-    padding-top: 0;
-  }
-  .fullscreen {
-    min-height: 100vh;
-    background-attachment: scroll;
-  }
-  .fullscreen__wrapper {
-    min-height: 100%;
-  }
-  .fullscreen__buttons {
-    flex-direction: row;
-  }
-  .about-me__wrapper {
-    justify-content: start;
-    flex-direction: row;
-    min-height: 100vh;
-    gap: 20px;
-  }
-  .about-me__image {
-    flex: 0 1 50%;
-  }
-  .about-me__image > img {
-    height: 100%;
-    max-width: 100%;
-  }
-  .portfolio {
-    background-attachment: scroll;
   }
 }

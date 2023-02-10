@@ -4,12 +4,9 @@ export function scrollHeader() {
 	const header = document.querySelector('[data-header]');
 	const hero = document.querySelector('.fullscreen');
 
-
 	const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 	const containHide = () => header.classList.contains('_hidden');
 	window.addEventListener('scroll', () => {
-		console.log(document.documentElement.scrollTop)
-		console.log()
 		if(window.pageYOffset > hero.offsetHeight) {
 			if (scrollPosition() > lastScroll && !containHide()) {
 				header.classList.add('_hidden');

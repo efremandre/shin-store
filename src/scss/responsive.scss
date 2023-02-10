@@ -7,7 +7,20 @@
 }
 
 @media screen and (max-width: 989.98px) {
+  .whyme {
+    padding-bottom: 0;
+    &__wrapper {
 
+    }
+
+    &__wrapper-image {
+      margin-bottom: 1em;
+    }
+
+    &__card {
+      padding: .5em;
+    }
+  }
 }
 
 @media screen and (max-width: 769.98px) {
@@ -55,6 +68,22 @@
     }
   }
 
+  .whyme {
+    padding-bottom: 0;
+    &__wrapper {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__wrapper-image {
+
+    }
+
+    &__card {
+
+    }
+  }
+
   .contact {
 
     &__wrapper {
@@ -98,6 +127,10 @@
     }
   }
 
+  .brands {
+    padding-bottom: 0;
+  }
+
   .tirefitting {
 
     &__row {
@@ -107,6 +140,18 @@
 
     &__wrapper {
       width: 100%;
+    }
+  }
+
+  .whyme {
+    padding-bottom: 0;
+    &__wrapper {
+      display: block;
+      margin: 0;
+    }
+
+    &__card {
+      padding: 0;
     }
   }
 
@@ -164,17 +209,6 @@
     }
   }
 
-  .whyme {
-    &__wrapper {
-      display: block;
-      margin: 0;
-    }
-
-    &__card {
-      max-width: 150px;
-      margin: 0 auto;
-    }
-  }
 }
 
 @media screen and (max-width: 319.98px) {
@@ -184,118 +218,5 @@
 }
 
 @media (any-hover: none) and (orientation: landscape) {
-  .navigation {
-    opacity: 1;
-    &__wrapper {
-      justify-content: space-between;
-    }
 
-    &__logo {
-
-    }
-
-    &__logo-link {
-    }
-
-    &__block {
-      @include mix.displayFlex(flex, start, center);
-      gap: 0 20px;
-    }
-
-    &__phone {
-      padding: 0;
-    }
-
-    &__icon {
-    }
-
-    &__link {
-
-    }
-  }
-
-  .main__fullscreen {
-    padding-top: 0;
-  }
-
-  .fullscreen {
-    min-height: 100vh;
-    background-attachment: scroll;
-    &:before {
-
-    }
-
-    &__wrapper {
-      min-height: 100%;
-    }
-
-    &__main-title {
-
-      & > span {
-
-      }
-    }
-
-    &__subtitle {
-
-    }
-
-    &__buttons {
-      flex-direction: row;
-    }
-
-    &__button {
-
-    }
-
-    &__button_black {
-
-    }
-  }
-
-  .about-me {
-
-    &__wrapper {
-      justify-content: start;
-      flex-direction: row;
-      min-height: 100vh;
-      gap: 20px;
-    }
-
-    &__subtitle {
-
-    }
-
-    &__text {
-
-
-      &>p {
-        &:last-child {
-
-        }
-      }
-    }
-
-    &__list {
-
-      &>li {
-      }
-    }
-
-    &__button {
-
-    }
-
-    &__image {
-      flex: 0 1 50%;
-      &>img {
-        height: 100%;
-        max-width: 100%;
-      }
-    }
-  }
-
-  .portfolio {
-    background-attachment: scroll;
-  }
 }

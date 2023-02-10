@@ -35,10 +35,6 @@ $sizeAfterEl: 1.1em;
     gap: 20px;
   }
 
-  &__contactinfo {
-
-  }
-
   &__phone {
     @include mix.displayFlex(flex, flex-end, flex-end);
     flex-direction: column;
@@ -115,25 +111,12 @@ $sizeAfterEl: 1.1em;
       left: 0;
       width: $sizeAfterEl;
       height: $sizeAfterEl;
-      background: url('../../../assets/images/icon/phone.svg') center center / contain no-repeat;
-    }
-
-    &:before {
-      @extend %pseudoElement;
-      bottom: 0;
-      left: 33px;
-      width: 0;
-      height: 2px;
-      background: var.$accentColor;
-      transition: width .5s ease-in-out;
+      background: url('../../assets/images/icon/phone.svg') center center / contain no-repeat;
     }
 
     @media (any-hover: hover) {
         &:hover {
-          color: var.$accentColor;
-          &:before {
-            width: 85%;
-          }
+          text-decoration: underline;
         }
     }
   }
