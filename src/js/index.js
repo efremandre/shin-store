@@ -8,6 +8,7 @@ import {animationScroll} from "./modules/_animationScroll.js";
 import { galleryModal } from "./modules/_gallery.js";
 import { modalImg } from "./modules/_modalImg.js";
 import { sendForm } from "./modules/_form.js";
+import {catalog} from "./modules/_catalog.js";
 
 hello();
 scrollHeader();
@@ -19,3 +20,4 @@ initSlider();
 galleryModal();
 modalImg();
 sendForm();
+catalog();

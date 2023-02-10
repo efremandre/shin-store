@@ -104,12 +104,12 @@
                     </div>
                 </div>
                 <div class="button-dawn">
-                    <button class="button-dawn__btn"></button>
+                    <button class="button-dawn__btn" tabindex="-1"></button>
                 </div>
             </section>
             <section class="main__brands brands">
                 <div class="container animation">
-                    <h2 class="brands__title subtitle">Работаем с брендами</h2>
+                    <h2 class="brands__title subtitle">Каталог</h2>
                     <div class="brands__wrapper">
                         <div class="brands__wrapper-image"><img src="./assets/images/brands/falken.png" alt="Falken" title="Falken" width="200" class="brands__image"></div>
                         <div class="brands__wrapper-image"><img src="./assets/images/brands/aeolus.png" alt="Aeolus" title="Aeolus" width="200" class="brands__image"></div>
@@ -119,8 +119,26 @@
                 </div>
             </section>
             <section id="catalog" class="main__catalog catalog">
-                <div class="container animation">
-                    <h2 class="catalog__title subtitle">Каталог</h2>
+                <div class="container">
+                    <div class="catalog__header">
+                        <div class="catalog__filter">
+                            <select id="season">
+                                <option value="">Сезон</option>
+                                <option value="Зима">Зима</option>
+                                <option value="Лето">Лето</option>
+                            </select>
+                            <input type="text" id="myInput" placeholder="Поиск...">
+                        </div>
+                        <div class="catalog__buttons">
+                            <button class="catalog__btn catalog__btn_prev" title="Назад"></button>
+                            <button class="catalog__btn catalog__btn_next" title="Вперёд"></button>
+                        </div>
+                    </div>
+                    <div class="catalog__card card">
+                        <ul class="card__grid">
+
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section id="service" class="main__tirefitting tirefitting">
