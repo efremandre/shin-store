@@ -1,0 +1,67 @@
+[
+	{
+		"id": 1,
+		"season": "Зима",
+		"price": "2500 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	},
+	{
+		"id": 2,
+		"season": "Лето",
+		"price": "2000 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	},
+	{
+		"id": 3,
+
+		"season": "Зима",
+		"price": "2500 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	},
+	{
+		"id": 4,
+		"season": "Зима",
+		"price": "2000 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	},
+	{
+		"id": 5,
+
+		"season": "Зима",
+		"price": "2000 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	},
+	{
+		"id": 6,
+		"season": "Лето",
+		"price": "2000 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	},
+	{
+		"id": 7,
+		"season": "Лето",
+		"price": "2000 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	},
+	{
+		"id": 8,
+		"season": "Лето",
+		"price": "2000 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	},
+	{
+		"id": 9,
+		"season": "Лето",
+		"price": "2000 рублей",
+		"title": "КАМА - 505 185/60R14 82Т",
+		"url": "../assets/images/catalog/catalog-photo1.jpg"
+	}
+]

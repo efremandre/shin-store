@@ -13,7 +13,7 @@
  }
 
   &__wrapper {
-
+   align-items: flex-start;
   }
 
   &__slider-container {
@@ -113,7 +113,9 @@
  }
 
   &__item {
-
+    flex: 1 1 auto;
+   margin-bottom: 1em;
+    @include mix.displayFlex(flex, space-between, flex-end);
   }
 
   &__text {

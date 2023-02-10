@@ -1707,6 +1707,9 @@ a:focus {
 .feedback__title {
   margin-bottom: 0.7em;
 }
+.feedback__wrapper {
+  align-items: flex-start;
+}
 .feedback__slider-container {
   width: 80%;
   margin: 0 auto;
@@ -1782,6 +1785,13 @@ a:focus {
   font-size: calc(18px + 2 * ((100vw - 320px) / 1200));
   margin-bottom: 10px;
   font-weight: 600;
+}
+.feedback__item {
+  flex: 1 1 auto;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .feedback__text {
   font-size: calc(18px + 2 * ((100vw - 320px) / 1200));
