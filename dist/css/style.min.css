@@ -1214,10 +1214,21 @@ a:focus {
   border: none;
   border-bottom: 1px solid #fff;
   background: rgba(10, 10, 10, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.form__input > input:-webkit-autofill, .form__input > input:-webkit-autofill:hover, .form__input > input:-webkit-autofill:focus, .form__input > input:-webkit-autofill:active, .form__input > textarea:-webkit-autofill, .form__input > textarea:-webkit-autofill:hover, .form__input > textarea:-webkit-autofill:focus, .form__input > textarea:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #111111 inset !important;
+  -webkit-text-fill-color: #fff !important;
+  -webkit-backdrop-filter: unset;
+}
+.form__input > input:focus, .form__input > textarea:focus {
+  transform: translateY(-1px);
+  box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
 }
 @media (any-hover: hover) {
   .form__input > input:hover, .form__input > textarea:hover {
-    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
   }
 }
 .form__input > textarea {
@@ -1346,12 +1357,12 @@ a:focus {
   height: 2em;
   border-radius: 5px;
   color: #fff;
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 @media (any-hover: hover) {
   .social__link:hover {
-    transform: translateY(-2px);
-    opacity: 0.7;
+    transform: translateY(-1px);
+    box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
   }
 }
 .social__link_vk {
@@ -1628,7 +1639,8 @@ a:focus {
 }
 .catalog__filter > select {
   width: 90px;
-  padding: 5px;
+  padding: 7px;
+  font-size: 16px;
   line-height: 1em;
   outline: none;
   border-radius: 5px;
@@ -1636,11 +1648,11 @@ a:focus {
   background: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.catalog__filter > select:focus {
-  transform: translateY(-1px);
-  box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
-}
 @media (any-hover: hover) {
+  .catalog__filter > select:focus {
+    transform: translateY(-1px);
+    box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
+  }
   .catalog__filter > select:hover {
     cursor: pointer;
     transform: translateY(-1px);
@@ -1659,39 +1671,44 @@ a:focus {
   background: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.catalog__filter > input:focus {
-  transform: translateY(-1px);
-  box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
-}
 @media (any-hover: hover) {
+  .catalog__filter > input:focus {
+    transform: translateY(-1px);
+    box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
+  }
   .catalog__filter > input:hover {
     transform: translateY(-1px);
     box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
   }
 }
-.catalog__buttons {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 10px;
-}
-.catalog__btn {
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;
-  transition: opacity 0.5s ease-in;
-}
-.catalog__btn_prev {
-  background: url("../assets/images/icon/arrow-slider.svg") center center/contain no-repeat;
-  transform: rotate(-180deg);
-}
-.catalog__btn_next {
-  background: url("../assets/images/icon/arrow-slider.svg") center center/contain no-repeat;
-}
 @media (any-hover: hover) {
+  .catalog__buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+  .catalog__btn {
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .catalog__btn > span {
+    display: block;
+    width: 40px;
+    height: 30px;
+  }
   .catalog__btn:hover {
     cursor: pointer;
-    opacity: 0.7;
+    box-shadow: 1px 9px 7px -9px rgba(1, 1, 1, 0.6);
+    transform: translateY(-2px);
+  }
+  .catalog__btn_prev > span {
+    background: url("../assets/images/icon/arrow-slider-prev.svg") center center/contain no-repeat;
+  }
+  .catalog__btn_next > span {
+    background: url("../assets/images/icon/arrow-slider-next.svg") center center/contain no-repeat;
   }
 }
 
@@ -2298,6 +2315,15 @@ a:focus {
   }
   .brands {
     padding-bottom: 0;
+  }
+  .catalog {
+    min-height: 100%;
+  }
+  .card__grid {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .card__btn {
+    padding: 1em 0.5em;
   }
   .tirefitting__row {
     display: flex;

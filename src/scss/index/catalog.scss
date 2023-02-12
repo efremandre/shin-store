@@ -19,7 +19,8 @@
 
     &>select {
       width: 90px;
-      padding: 5px;
+      padding: 7px;
+      font-size: 16px;
       line-height: 1em;
       outline: none;
       border-radius: 5px;
@@ -27,13 +28,12 @@
       background: none;
       transition: transform .3s ease, box-shadow .3s ease;
 
-      &:focus {
-        transform: translateY(-1px);
-        box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
-      }
-
       @media (any-hover: hover) {
-          &:hover {
+        &:focus {
+          transform: translateY(-1px);
+          box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
+        }
+        &:hover {
             cursor: pointer;
             transform: translateY(-1px);
             box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
@@ -53,13 +53,12 @@
       background: none;
       transition: transform .3s ease, box-shadow .3s ease;
 
-      &:focus {
-        transform: translateY(-1px);
-        box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
-      }
-
       @media (any-hover: hover) {
-          &:hover {
+        &:focus {
+          transform: translateY(-1px);
+          box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
+        }
+        &:hover {
             transform: translateY(-1px);
             box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
           }
@@ -67,31 +66,38 @@
     }
   }
 
-  &__buttons {
-    @include mix.displayFlex(flex, start, center);
-    gap: 10px
-  }
-
-  &__btn {
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
-    transition: opacity .5s ease-in;
-
-    &_prev {
-      background: url('../../assets/images/icon/arrow-slider.svg') center center / contain no-repeat;
-      transform: rotate(-180deg);
-    }
-
-    &_next {
-      background: url('../../assets/images/icon/arrow-slider.svg') center center / contain no-repeat;
-    }
-
     @media (any-hover: hover) {
+      &__buttons {
+        @include mix.displayFlex(flex, start, center);
+        gap: 20px
+      }
+
+      &__btn {
+        padding: 5px;
+        border-radius: 5px;
+        background: none;
+        transition: transform .3s ease, box-shadow .3s ease;
+
+        &>span {
+          display: block;
+          width: 40px;
+          height: 30px;
+        }
+
         &:hover {
           cursor: pointer;
-          opacity: .7;
+          box-shadow: 1px 9px 7px -9px rgba(1, 1, 1, 0.6);
+          transform: translateY(-2px);
         }
+
+        &_prev>span {
+          background: url('../../assets/images/icon/arrow-slider-prev.svg') center center / contain no-repeat;
+        }
+
+        &_next>span {
+          background: url('../../assets/images/icon/arrow-slider-next.svg') center center / contain no-repeat;
+        }
+
     }
   }
 }

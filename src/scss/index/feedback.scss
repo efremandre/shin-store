@@ -62,12 +62,6 @@
   font-size: 35px;
   font-weight: 600;
   transition: text-shadow .5s ease, transform .5s ease;
-
-  @media (any-hover: hover) {
-      &:hover {
-
-      }
-  }
  }
  
  &__pagination > .swiper-pagination-bullet{

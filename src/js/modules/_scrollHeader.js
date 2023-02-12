@@ -17,4 +17,8 @@ export function scrollHeader() {
 			lastScroll = scrollPosition();
 		}
 	})
+
+	header.addEventListener('mouseenter', () => {
+		if (header.classList.contains('_hidden')) header.classList.remove('_hidden');
+	})
 }

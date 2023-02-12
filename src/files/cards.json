@@ -133,41 +133,60 @@
 		}
 	},
 	{
-		"id": 8,
+		"id": 1,
 		"url": "../assets/images/catalog/catalog-photo1.jpg",
 		"title": {
-			"brand": "KAMA",
-			"modelname": "",
-			"modelnumber": "521",
-			"width": "185",
-			"height": "60",
-			"radius": "15",
-			"indexload": "82",
-			"indexspeed": "T"
+			"brand": "520 ",
+			"modelname":  " ",
+			"modelnumber":  " ",
+			"width": " ",
+			"height": " ",
+			"radius": " ",
+			"indexload": " ",
+			"indexspeed": " "
 		},
-		"price": "3 450",
+		"price": " ",
 		"season": {
-			"url": "winter",
-			"alt": "Зимние"
+			"url": " ",
+			"alt": " "
 		}
 	},
 	{
-		"id": 9,
+		"id": 1,
 		"url": "../assets/images/catalog/catalog-photo1.jpg",
 		"title": {
-			"brand": "KAMA",
+			"brand": "",
 			"modelname": "",
-			"modelnumber": "521",
-			"width": "185",
-			"height": "60",
-			"radius": "15",
-			"indexload": "82",
-			"indexspeed": "T"
+			"modelnumber": "",
+			"width": "",
+			"height": "",
+			"radius": "",
+			"indexload": "",
+			"indexspeed": ""
 		},
-		"price": "3 450",
+		"price": "",
 		"season": {
-			"url": "summer",
-			"alt": "Летние"
+			"url": "",
+			"alt": ""
+		}
+	},
+	{
+		"id": 1,
+		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"title": {
+			"brand": "",
+			"modelname": "",
+			"modelnumber": "",
+			"width": "",
+			"height": "",
+			"radius": "",
+			"indexload": "",
+			"indexspeed": ""
+		},
+		"price": "",
+		"season": {
+			"url": "",
+			"alt": ""
 		}
 	}
 ]

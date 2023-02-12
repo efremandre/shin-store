@@ -14,13 +14,13 @@
     height: 2em;
     border-radius: 5px;
     color: var.$lightColor;
-    transition: opacity .5s ease-out, transform .5s ease-out;
+    transition: transform .3s ease, box-shadow .3s ease;
 
     @media (any-hover: hover) {
-        &:hover {
-          transform: translateY(-2px);
-          opacity: .7;
-        }
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
+      }
     }
 
     &_vk {

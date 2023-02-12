@@ -22,7 +22,7 @@ export function catalog() {
 		const getOutputCard = (data) => {
 			document.querySelector('.card__grid').innerHTML = data.map(el =>
 				`<li class="card__item">
-                    <article class="card__body">
+                    <article class="card__body _lazy">
                         <div class="card__image-wrapper">
                             <img src="${el.url}" alt="*">
                             <span class="card__season-icon">

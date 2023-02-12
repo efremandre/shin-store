@@ -96,9 +96,26 @@
       border-bottom: 1px solid #fff;
       background: rgba(10, 10, 10, .9);
 
+      transition: transform .3s ease, box-shadow .3s ease;
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px var.$darkColor inset !important;
+        -webkit-text-fill-color: var.$lightColor !important;
+        -webkit-backdrop-filter: unset;
+      }
+
+      &:focus {
+        transform: translateY(-1px);
+        box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
+      }
+
       @media (any-hover: hover) {
         &:hover {
-          cursor: pointer;
+          transform: translateY(-1px);
+          box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
         }
       }
     }
