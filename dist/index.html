@@ -51,7 +51,7 @@
                         </div>
                         <nav class="navigation__nav nav" data-nav>
                             <ul class="nav__list">
-                                <li><a href="#catalog" class="nav__link">Каталог</a></li>
+                                <li><a href="#catalog" class="nav__link">Хит продаж</a></li>
                                 <li><a href="#service" class="nav__link">Услуги</a></li>
                                 <li><a href="#feedback" class="nav__link">Отзывы</a></li>
                                 <li><a href="#contact" class="nav__link">Контакты</a></li>
@@ -109,7 +109,7 @@
             </section>
             <section class="main__brands brands">
                 <div class="container animation">
-                    <h2 class="brands__title subtitle">Каталог</h2>
+                    <h2 class="brands__title subtitle">Работаем с брендами</h2>
                     <div class="brands__wrapper">
                         <div class="brands__wrapper-image"><img src="./assets/images/brands/falken.png" alt="Falken" title="Falken" width="200" class="brands__image"></div>
                         <div class="brands__wrapper-image"><img src="./assets/images/brands/aeolus.png" alt="Aeolus" title="Aeolus" width="200" class="brands__image"></div>
@@ -119,25 +119,10 @@
                 </div>
             </section>
             <section id="catalog" class="main__catalog catalog">
-                <div class="container">
-                    <div class="catalog__header">
-                        <div class="catalog__filter">
-                            <select id="season">
-                                <option value="">Сезон</option>
-                                <option value="Зима">Зима</option>
-                                <option value="Лето">Лето</option>
-                            </select>
-                            <input type="text" id="myInput" placeholder="Поиск...">
-                        </div>
-                        <div class="catalog__buttons">
-                            <button class="catalog__btn catalog__btn_prev" title="Назад"><span></span></button>
-                            <button class="catalog__btn catalog__btn_next" title="Вперёд"><span></span></button>
-                        </div>
-                    </div>
+                <div class="container animation">
+                    <h2 class="catalog__title subtitle">Хит продаж</h2>
                     <div class="catalog__card card">
-                        <ul class="card__grid">
-
-                        </ul>
+                        <ul class="card__grid"></ul>
                     </div>
                 </div>
             </section>
@@ -353,7 +338,6 @@
                         <div class="contact__wrapper">
                             <div class="contact__contact-block">
                                 <p class="contact__contact-description">Свяжитесь с нами или оставьте свои контакты и мы перезвоним.</p>
-                                <!--                    <p class="contact__contact-description" >Наш телефон:  <a href="tel:+79298424232" class="contact__phone" title="Телефон Шин.Store">+7 (929) 842-42-32</a></p>-->
                                 <div class="contact__social social">
                                     <ul class="social__list">
                                         <li>
@@ -382,8 +366,8 @@
                                             <input id="tel" type="tel" name="tel" placeholder="Ваш телефон" required data-phone-pattern>
                                         </div>
                                         <div class="form__check">
-                                            <input id="checkPersonal" name="personal" type="checkbox" checked required>
-                                            <label for="checkPersonal">Подтверждаю согласие на обработку персональных данных</label>
+                                            <input id="checkPersonal" name="privacy" type="checkbox" checked required>
+                                            <label for="checkPersonal">Подтверждаю согласие на <a title="Политика конфиденциальности" target="_blank" href="../privacy/privacy.html">обработку персональных данных</a></label>
                                         </div>
                                         <div class="form__input">
                                             <textarea id="message" name="message" cols="40" rows="3" class="message" placeholder="Сообщение..."></textarea>
@@ -415,6 +399,14 @@
                 <div class="footer__wrapper animation">
                     <div class="@@class-logo-wrapper logo">
                         <a class="footer__logo-link logo__link"><img src="./assets/images/logo.svg" alt="Шин.Store"></a>
+                    </div>
+                    <div class="footer__requisites">
+                        <p>ОГРН ИП 322237500423291 от 29.11.2022</p>
+                        <p><a title="Политика конфиденциальности" target="_blank" href="../privacy/privacy.html">Политика конфиденциальности</a></p>
+                    </div>
+                    <div class="footer__copyright">
+                        <p>&copy shinstore.ru, 2023</p>
+                        <address class="footer__author"><a title="Телеграм автора автора сайта" href="https://t.me/efremandre">by efremandre</a></address>
                     </div>
                 </div>
             </div>

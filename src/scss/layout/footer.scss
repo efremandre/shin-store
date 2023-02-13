@@ -5,6 +5,8 @@
 
 .footer {
   padding: 2em 0;
+  color: var.$lightColor;
+  @include mix.adaptivFont(16, 10);
   background-color: var.$darkColor;
 
   &.footer-show {
@@ -29,6 +31,22 @@
     @media (min-height: 770px) {
       &:hover {
         opacity: .7;
+      }
+    }
+  }
+
+  &__requisites {
+    &>p>a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__author {
+    &>a {
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

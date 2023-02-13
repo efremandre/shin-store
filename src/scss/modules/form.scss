@@ -126,6 +126,12 @@
   }
 
   &__check {
-    @include mix.adaptivFont(14, 10)
+    @include mix.adaptivFont(14, 10);
+    &>label>a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }

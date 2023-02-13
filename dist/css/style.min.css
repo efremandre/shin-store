@@ -1127,6 +1127,23 @@ a:focus {
   color: rgb(127, 177, 61);
 }
 
+.privacy {
+  padding: 20px;
+}
+.privacy > h1 {
+  font-size: 30px;
+}
+.privacy > h2 {
+  font-size: 18px;
+}
+.privacy > p > a {
+  color: blue;
+  text-decoration: underline;
+}
+.privacy > p > a:hover {
+  text-decoration: none;
+}
+
 .form-container {
   position: relative;
   overflow: hidden;
@@ -1236,6 +1253,12 @@ a:focus {
 }
 .form__check {
   font-size: calc(10px + 4 * ((100vw - 320px) / 1200));
+}
+.form__check > label > a {
+  text-decoration: underline;
+}
+.form__check > label > a:hover {
+  text-decoration: none;
 }
 
 .animation {
@@ -1620,96 +1643,14 @@ a:focus {
   gap: 15px;
 }
 .main__catalog {
-  padding: 1.7em 0;
+  padding: 1em 0;
 }
 
 .catalog {
   min-height: 100vh;
 }
-.catalog__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.catalog__filter {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 10px;
-}
-.catalog__filter > select {
-  width: 90px;
-  padding: 7px;
-  font-size: 16px;
-  line-height: 1em;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  background: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-@media (any-hover: hover) {
-  .catalog__filter > select:focus {
-    transform: translateY(-1px);
-    box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
-  }
-  .catalog__filter > select:hover {
-    cursor: pointer;
-    transform: translateY(-1px);
-    box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
-  }
-}
-.catalog__filter > input {
-  width: 100%;
-  height: 100%;
-  max-width: 200px;
-  line-height: 1em;
-  padding: 6px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  outline: none;
-  background: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-@media (any-hover: hover) {
-  .catalog__filter > input:focus {
-    transform: translateY(-1px);
-    box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
-  }
-  .catalog__filter > input:hover {
-    transform: translateY(-1px);
-    box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
-  }
-}
-@media (any-hover: hover) {
-  .catalog__buttons {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-  }
-  .catalog__btn {
-    padding: 5px;
-    border-radius: 5px;
-    background: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .catalog__btn > span {
-    display: block;
-    width: 40px;
-    height: 30px;
-  }
-  .catalog__btn:hover {
-    cursor: pointer;
-    box-shadow: 1px 9px 7px -9px rgba(1, 1, 1, 0.6);
-    transform: translateY(-2px);
-  }
-  .catalog__btn_prev > span {
-    background: url("../assets/images/icon/arrow-slider-prev.svg") center center/contain no-repeat;
-  }
-  .catalog__btn_next > span {
-    background: url("../assets/images/icon/arrow-slider-next.svg") center center/contain no-repeat;
-  }
+.catalog__title {
+  margin-bottom: 0;
 }
 
 .card {
@@ -1736,8 +1677,7 @@ a:focus {
 }
 @media (any-hover: hover) {
   .card__item:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 11px 1px rgba(34, 60, 80, 0.5);
+    box-shadow: 0 0 11px 1px rgba(34, 60, 80, 0.5);
   }
 }
 .card__item._card-item-hidden {
@@ -1769,7 +1709,8 @@ a:focus {
   padding: 5px;
   border-radius: 5px;
   background-color: #111111;
-  box-shadow: 0px 0px 15px 1px rgba(255, 246, 246, 0.6);
+  box-shadow: 0 0 15px 1px rgba(255, 246, 246, 0.6);
+  animation: flashing 5s infinite ease;
 }
 .card__content {
   flex-grow: 1;
@@ -1792,10 +1733,19 @@ a:focus {
   font-size: 14px;
 }
 .card__listcharact > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
   padding: 0 5px;
   border: 1px solid rgb(127, 177, 61);
   border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card__listcharact > li > img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 @media (any-hover: hover) {
   .card__listcharact > li:hover {
@@ -1819,6 +1769,17 @@ a:focus {
   font-size: 12px;
 }
 
+@keyframes flashing {
+  0% {
+    box-shadow: 0 0 15px 1px rgba(255, 246, 246, 0);
+  }
+  50% {
+    box-shadow: 0 0 15px 1px rgba(255, 246, 246, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 15px 1px rgba(255, 246, 246, 0);
+  }
+}
 .main__tirefitting {
   padding: 1.7em 0;
 }
@@ -2143,6 +2104,8 @@ a:focus {
 
 .footer {
   padding: 2em 0;
+  color: #fff;
+  font-size: calc(10px + 6 * ((100vw - 320px) / 1200));
   background-color: #111111;
 }
 .footer__wrapper {
@@ -2163,6 +2126,12 @@ a:focus {
   .footer__social-link:hover {
     opacity: 0.7;
   }
+}
+.footer__requisites > p > a:hover {
+  text-decoration: underline;
+}
+.footer__author > a:hover {
+  text-decoration: underline;
 }
 
 .burger {

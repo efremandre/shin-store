@@ -133,60 +133,22 @@
 		}
 	},
 	{
-		"id": 1,
+		"id": 8,
 		"url": "../assets/images/catalog/catalog-photo1.jpg",
 		"title": {
-			"brand": "520 ",
-			"modelname":  " ",
-			"modelnumber":  " ",
-			"width": " ",
-			"height": " ",
-			"radius": " ",
-			"indexload": " ",
-			"indexspeed": " "
+			"brand": "MICHELIN",
+			"modelname":  "",
+			"modelnumber":  "320",
+			"width": "185",
+			"height": "60",
+			"radius": "14",
+			"indexload": "82",
+			"indexspeed": "T"
 		},
-		"price": " ",
+		"price": "5 500",
 		"season": {
-			"url": " ",
-			"alt": " "
-		}
-	},
-	{
-		"id": 1,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
-		"title": {
-			"brand": "",
-			"modelname": "",
-			"modelnumber": "",
-			"width": "",
-			"height": "",
-			"radius": "",
-			"indexload": "",
-			"indexspeed": ""
-		},
-		"price": "",
-		"season": {
-			"url": "",
-			"alt": ""
-		}
-	},
-	{
-		"id": 1,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
-		"title": {
-			"brand": "",
-			"modelname": "",
-			"modelnumber": "",
-			"width": "",
-			"height": "",
-			"radius": "",
-			"indexload": "",
-			"indexspeed": ""
-		},
-		"price": "",
-		"season": {
-			"url": "",
-			"alt": ""
+			"url": "summer",
+			"alt": "Лето"
 		}
 	}
 ]
