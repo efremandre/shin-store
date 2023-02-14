@@ -1,8 +1,8 @@
 @use "sass:map";
 /// общие
-$mainBg: #FFF; // background
+$mainBg: #F5F5F5; // background
 $accentColor: #C52917; // акцентный цвет и цвет скроллбара
-$accentColorTwo: #7FB13D; // второй акцентный цвет и цвет скроллбара
+$accentColorTwo: rgb(127, 177, 61); // второй акцентный цвет и цвет скроллбара
 $widthContainer: 1200; // max-width
 
 $family: 'Circe', 'Arial', 'Helvetica', sans-serif; // font-family дефолтный шрифт

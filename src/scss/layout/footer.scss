@@ -5,7 +5,13 @@
 
 .footer {
   padding: 2em 0;
+  @include mix.adaptivFont(16, 9);
+  line-height: 1.3em;
+  color: var.$lightColor;
   background-color: var.$darkColor;
+  & p {
+    margin: 0;
+  }
 
   &.footer-show {
 
@@ -19,16 +25,19 @@
     color: var.$lightColor;
   }
 
-  &__social {
-    @include mix.displayFlex(flex, start, center);
-    gap: 10px
+  &__requisites {
+    padding: 0 1em;
+    &>p>a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
-  &__social-link {
-
-    @media (min-height: 770px) {
+  &__author {
+    &>a {
       &:hover {
-        opacity: .7;
+        text-decoration: underline;
       }
     }
   }

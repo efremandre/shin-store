@@ -4,7 +4,8 @@
 
 .logo {
   @include mix.displayFlex(flex, center, center);
+
   &__link {
-    display: block;
+
   }
 }

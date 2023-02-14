@@ -19,6 +19,7 @@ global.app = {
 // импорт задач
 import { clean } from './gulp/tasks/clean.js';
 import { files } from './gulp/tasks/files.js';
+import { vendor } from './gulp/tasks/vendor.js';
 import { html } from './gulp/tasks/html.js';
 import { scss } from './gulp/tasks/scss.js';
 import { js } from './gulp/tasks/js.js';
@@ -30,6 +31,7 @@ import { zip } from './gulp/tasks/zip.js'
 // наблюдатель за изменениями в файлах
 function watcher() {
 	gulp.watch(path.watch.files, files);
+	gulp.watch(path.watch.vendor, vendor);
 	gulp.watch(path.watch.html, html);
 	gulp.watch(path.watch.scss, scss);
 	gulp.watch(path.watch.js, js);
@@ -40,7 +42,7 @@ function watcher() {
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(files, html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(files, vendor, html, scss, js, images));
 
 // построение сценариев
 const dev = gulp.series(clean, mainTasks, gulp.parallel(watcher, server));
