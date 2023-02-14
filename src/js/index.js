@@ -7,7 +7,6 @@ import { pressDawn } from "./modules/_pressDawn.js";
 import { pressUp } from "./modules/_pressUp.js";
 import { catalog } from "./modules/_catalog.js";
 import { sendForm } from "./modules/_form.js";
-import { modalImg } from "./modules/_modalImg.js";
 
 hello();
 burger();
@@ -18,4 +17,3 @@ pressDawn();
 pressUp();
 catalog();
 sendForm();
-modalImg();

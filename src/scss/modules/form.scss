@@ -45,6 +45,7 @@
 
 .form-callback {
   position: fixed;
+  box-sizing: border-box;
   @include mix.displayFlex(flex, center, center);
   z-index: 9999;
   top: 0;
@@ -52,10 +53,11 @@
   right: 0;
   min-height: 30px;
   width: 100%;
-  max-width: 420px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 1em;
   color: var.$darkColor;
+  @include mix.adaptivFont(16, 14);
   border-radius: 5px;
   background: var.$lightColor;
   box-shadow: 4px 2px 11px 1px rgba(1, 1, 1, .6);

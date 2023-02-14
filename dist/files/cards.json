@@ -1,18 +1,18 @@
 [
 	{
 		"id": 1,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"url": "../assets/images/catalog/photo1.jpg",
 		"title": {
-			"brand": "KAMA",
-			"modelname": "",
-			"modelnumber": "505",
-			"width": "175",
-			"height": "65",
-			"radius": "14",
-			"indexload": "82",
-			"indexspeed": "T"
+			"brand": "Pirelli",
+			"modelname": "P7cint",
+			"modelnumber": "ECO",
+			"width": "205",
+			"height": "55",
+			"radius": "16",
+			"indexload": "91",
+			"indexspeed": "V"
 		},
-		"price": "2 250",
+		"price": "4 700",
 		"season": {
 			"url": "summer",
 			"alt": "Летние"
@@ -20,121 +20,121 @@
 	},
 	{
 		"id": 2,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"url": "../assets/images/catalog/photo2.jpg",
 		"title": {
-			"brand": "KAMA",
-			"modelname": "Brina",
-			"modelnumber": "V-521",
-			"width": "185",
-			"height": "60",
+			"brand": "Nexen Tire",
+			"modelname": "",
+			"modelnumber": "",
+			"width": "205",
+			"height": "55",
 			"radius": "16",
-			"indexload": "82",
-			"indexspeed": "T"
+			"indexload": "91",
+			"indexspeed": "V"
 		},
-		"price": "4 350",
+		"price": "",
 		"season": {
-			"url": "winter",
-			"alt": "Зимние"
+			"url": "summer",
+			"alt": "Летние"
 		}
 	},
 	{
 		"id": 3,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"url": "../assets/images/catalog/photo3.jpg",
 		"title": {
-			"brand": "VIATTI",
-			"modelname": "Brina",
-			"modelnumber": "V-521",
-			"width": "185",
-			"height": "60",
-			"radius": "15",
-			"indexload": "82",
-			"indexspeed": "T"
+			"brand": "Kama",
+			"modelname": "Flame",
+			"modelnumber": "",
+			"width": "205",
+			"height": "70",
+			"radius": "16",
+			"indexload": "91",
+			"indexspeed": "Q"
 		},
-		"price": "3 450",
+		"price": "5 700",
 		"season": {
-			"url": "winter",
-			"alt": "Зимние"
+			"url": "summer",
+			"alt": "Летние"
 		}
 	},
 	{
 		"id": 4,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"url": "../assets/images/catalog/photo4.jpg",
 		"title": {
-			"brand": "KAMA",
-			"modelname": "",
-			"modelnumber": "521",
-			"width": "185",
-			"height": "60",
+			"brand": "Pirelli",
+			"modelname": "P1cint",
+			"modelnumber": "VerdeEco",
+			"width": "195",
+			"height": "50",
 			"radius": "15",
 			"indexload": "82",
-			"indexspeed": "T"
+			"indexspeed": "V"
 		},
-		"price": "3 450",
+		"price": "",
 		"season": {
-			"url": "winter",
-			"alt": "Зимние"
+			"url": "summer",
+			"alt": "Летние"
 		}
 	},
 	{
 		"id": 5,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"url": "../assets/images/catalog/photo5.jpg",
 		"title": {
-			"brand": "KAMA",
-			"modelname": "",
-			"modelnumber": "521",
-			"width": "185",
-			"height": "60",
+			"brand": "Nokian Tyres",
+			"modelname": "Hakka Green",
+			"modelnumber": "3",
+			"width": "195",
+			"height": "65",
 			"radius": "15",
-			"indexload": "82",
-			"indexspeed": "T"
+			"indexload": "95",
+			"indexspeed": "H"
 		},
-		"price": "3 450",
+		"price": "",
 		"season": {
-			"url": "winter",
-			"alt": "Зимние"
+			"url": "summer",
+			"alt": "Летние"
 		}
 	},
 	{
 		"id": 6,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"url": "../assets/images/catalog/photo6.jpg",
 		"title": {
-			"brand": "KAMA",
+			"brand": "Nexen Tire",
 			"modelname": "",
-			"modelnumber": "521",
-			"width": "185",
-			"height": "60",
-			"radius": "15",
-			"indexload": "82",
-			"indexspeed": "T"
+			"modelnumber": "",
+			"width": "205",
+			"height": "55",
+			"radius": "16",
+			"indexload": "91",
+			"indexspeed": "V"
 		},
-		"price": "3 450",
+		"price": "",
 		"season": {
-			"url": "winter",
-			"alt": "Зимние"
+			"url": "summer",
+			"alt": "Летние"
 		}
 	},
 	{
 		"id": 7,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"url": "../assets/images/catalog/photo7.jpg",
 		"title": {
-			"brand": "KAMA",
-			"modelname": "",
-			"modelnumber": "521",
-			"width": "185",
-			"height": "60",
+			"brand": "Yokohama",
+			"modelname": "BlueEarth-Es",
+			"modelnumber": "ES32",
+			"width": "195",
+			"height": "65",
 			"radius": "15",
-			"indexload": "82",
-			"indexspeed": "T"
+			"indexload": "91",
+			"indexspeed": "v"
 		},
-		"price": "3 450",
+		"price": "",
 		"season": {
-			"url": "winter",
-			"alt": "Зимние"
+			"url": "summer",
+			"alt": "Летние"
 		}
 	},
 	{
 		"id": 8,
-		"url": "../assets/images/catalog/catalog-photo1.jpg",
+		"url": "../assets/images/catalog/photo8.jpg",
 		"title": {
 			"brand": "MICHELIN",
 			"modelname":  "",

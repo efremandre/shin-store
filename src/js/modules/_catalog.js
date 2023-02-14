@@ -15,7 +15,8 @@ export function catalog() {
 				`<li class="card__item">
                     <article class="card__body">
                         <div class="card__image-wrapper">
-                            <img src="${el.url}" title="Шины ${el.title.brand} ${el.title.modelname} ${el.title.modelnumber}" alt="Шины ${el.title.brand} ${el.title.modelname} ${el.title.modelnumber}">
+                            <img data-images src="${el.url}" title="Шины ${el.title.brand} ${el.title.modelname} ${el.title.modelnumber}" alt="Шины ${el.title.brand} ${el.title.modelname} ${el.title.modelnumber}">
+                        
                         </div>
                         <div class="card__content">
                             <div class="card__title-wrapper">
