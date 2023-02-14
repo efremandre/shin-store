@@ -2,7 +2,7 @@
 
 export function catalog() {
 	const getCards = async () => {
-		const response = await fetch('../../files/cards.json');
+		const response = await fetch('./files/cards.json');
 		const data = await response.json();
 		return data;
 	}
