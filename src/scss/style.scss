@@ -3,7 +3,7 @@
 @use '../../node_modules/swiper/swiper-bundle.min.css';
 @use './fonts.scss';
 @use 'global-style';
-@use './components/privacy';
+@use 'privacy/privacy';
 @use './modules/form';
 @use './modules/scroll-animation';
 @use './modules/scrollbar';

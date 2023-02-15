@@ -1341,16 +1341,17 @@ a:focus {
   color: #fff;
   line-height: 1.5em;
   font-weight: 400;
-  background: #C52917;
+  background: rgb(127, 177, 61);
   border-radius: 5px;
   transition: box-shadow 0.5s ease-out, transform 0.5s ease-out, opacity 0.5s ease-out;
+  text-shadow: 3px 1px 2px rgba(28, 28, 28, 0.3);
 }
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
     cursor: pointer;
     box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
     transform: translateY(-2px);
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -1653,7 +1654,6 @@ a:focus {
 
 .card {
   height: auto;
-  overflow-y: auto;
   scrollbar-color: #223c50 #f3f3f4;
   scrollbar-width: thin;
 }
@@ -1683,15 +1683,13 @@ a:focus {
   flex-direction: column;
 }
 .card__image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: start;
   height: 450px;
   border-radius: 5px;
   overflow: hidden;
 }
 .card__image-wrapper > img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease-in;
 }
@@ -2231,7 +2229,7 @@ a:focus {
     flex-wrap: wrap;
   }
   .contact__wrapper {
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
   }
   .contact__contact-block {
     flex: 0 1 100%;
@@ -2261,7 +2259,11 @@ a:focus {
   .catalog {
     min-height: 100%;
   }
+  .card {
+    overflow-y: auto;
+  }
   .card__grid {
+    grid-template-columns: repeat(9, 300px);
     grid-template-rows: repeat(1, 1fr);
   }
   .card__btn {
