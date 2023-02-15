@@ -8,35 +8,26 @@
 }
 
 .container__row {
-  @include mix.displayFlex(flex, end, center);
-  min-height: 100vh;
+
 }
 
 .fullscreen {
-  background: #ccc url('../../../assets/images/example.jpg') top center / cover no-repeat fixed;
-
-  &:before {
-    @extend %pseudoElement;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var.$accentColor;
-    opacity: .2;
+  @include mix.displayFlex(flex, start, center);
+  min-height: 100vh;
+  background: #ccc url('../../assets/images/bg-main.jpg') top center / cover no-repeat;
+  @media (any-hover: hover) {
+    background-attachment: fixed;
   }
 
   &__wrapper {
+    @include mix.displayFlex(flex, center, flex-start);
+    flex-direction: column;
     position: relative;
-    z-index: 2;
-    width: 50%;
     padding-bottom: 2em;
   }
 
   &__main-title {
     margin-bottom: 0.5em;
-    &>span {
-      color: var.$accentColor;
-    }
   }
 
   &__subtitle {
@@ -47,13 +38,31 @@
 
   &__buttons {
     @include mix.displayFlex(flex, start, center);
+    width: 100%;
     gap: 20px;
   }
 
   &__button {
-    width: 100%;
-    max-width: 270px;
     box-sizing: border-box;
-    padding: 1em;
+  }
+
+  @media (any-hover: none) {
+    &__button_order-call {
+      display: none;
+    }
+
+    &__button_call {
+      display: flex;
+    }
+  }
+
+  @media (any-hover: hover) {
+    &__button_order-call {
+      display: flex;
+    }
+
+    &__button_call {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,38 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+
+.social {
+  &__list {
+    @include mix.displayFlex(flex, start, center);
+    gap: 10px
+  }
+
+  &__link {
+    @include mix.displayFlex(flex, center, center);
+    width: 2em;
+    height: 2em;
+    border-radius: 5px;
+    color: var.$lightColor;
+    transition: transform .3s ease, box-shadow .3s ease;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 1px 10px 11px -4px rgba(1, 1, 1, 0.6);
+      }
+    }
+
+    &_vk {
+      background-color: #3648FF;
+    }
+
+    &_wa {
+      background-color: #00FC75;
+    }
+
+    &>img {
+      max-width: 100%;
+    }
+  }
+}

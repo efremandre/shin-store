@@ -6,7 +6,22 @@
 
 }
 
-@media screen and (max-width: 989.98px) {}
+@media screen and (max-width: 989.98px) {
+  .whyme {
+    padding-bottom: 0;
+    &__wrapper {
+
+    }
+
+    &__wrapper-image {
+      margin-bottom: 1em;
+    }
+
+    &__card {
+      padding: .5em;
+    }
+  }
+}
 
 @media screen and (max-width: 769.98px) {
   .navigation {
@@ -52,236 +67,172 @@
       }
     }
   }
+
+  .whyme {
+    padding-bottom: 0;
+    &__wrapper {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__wrapper-image {
+
+    }
+
+    &__card {
+
+    }
+  }
+
+  .contact {
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__contact-block {
+      flex: 0 1 100%;
+    }
+
+    &__map-block {
+      flex: 0 1 100%;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 569.98px) {
-  .header {
+  .container {
+    padding: 0 1em;
+  }
 
-    &__navigation {
-    }
-
+  .logo {
+    width: 60px;
   }
 
   .navigation {
-
-    &__wrapper {
-
-    }
-
-    &__logo {
-
-    }
-
-    &__logo-link {
-
-    }
-
-    &__nav {
-    }
-
     &__phone {
       display: none;
-    }
-
-    &__icon {
-    }
-
-    &__link {
-
     }
   }
 
   .fullscreen {
-    background: #ccc url('../assets/images/bg-mob-fullscreen.jpg') top center / cover no-repeat;
+    &__buttons {
+      width: 100%;
+      gap: 15px;
+    }
+
+    &__button {
+
+    }
+  }
+
+  .brands {
+    padding-bottom: 0;
+  }
+
+  .catalog {
+    min-height: 100%;
+  }
+
+  .card {
+    overflow-y: auto;
+    &__grid {
+      grid-template-columns: repeat(9, 300px);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    &__btn {
+      padding: 1em .5em;
+    }
+  }
+
+  .tirefitting {
+
+    &__row {
+      @include mix.displayFlex(flex, start, center);
+
+    }
 
     &__wrapper {
-      position: relative;
-      z-index: 2;
       width: 100%;
     }
   }
 
-  .button-dawn {
-    &__btn {
-      &:after {
-        background: url("../assets/images/icon/arrow-down-hover.svg") center center / contain no-repeat;
+  .whyme {
+    padding-bottom: 0;
+    &__wrapper {
+      display: block;
+      margin: 0;
+    }
+
+    &__card {
+      padding: 0;
+    }
+  }
+
+  .feedback {
+    &__slider-container {
+      width: 100%;
+    }
+
+    &__slider {
+      padding-bottom: 40px;
+    }
+
+    &__wrapper-slide {
+      padding: 1em;
+    }
+
+    &__next,
+    &__prev {
+      display: none;
+    }
+
+    &__text {
+      @include mix.adaptivFont(var.$generalBigTextSize, var.$generalBigTextSizeMin);
+    }
+
+    &__link {
+      display: block;
+      text-align: right;
+      color: var.$generalColorText;
+      @include mix.adaptivFont(14, 10);
+      text-decoration: underline;
+
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: none;
+        }
       }
+    }
+  }
+
+  .contact {
+    &__map {
+      height: 400px;
     }
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 429.98px) {
 
-  .container {
-    padding: 0 0.5em;
+  .fullscreen {
+
+    &__buttons {
+      align-items: start;
+      flex-direction: column;
+    }
   }
 
-  .price {
+}
 
-    &__subtitle {
-    }
-
-    &__grid {
-
-    }
-
-    &__cart {
-
-    }
-
-    &__title {
-
-    }
-
-    &__description-wrapper {
-      padding: 0;
-    }
-
-    &__description {
-      padding: 1em 1em 1em 1.7em;
-    }
-
-    &__list {
-
-      & > li {
-
-      }
-    }
-
-    &__other-description {
-
-      & > p {
-
-      }
-
-      & > p:last-child {
-
-      }
-    }
-
-    &__button {
-
-    }
-
-    &__button-btn {
-      max-width: 100%;
-    }
+@media screen and (max-width: 319.98px) {
+  .container {
+    padding: 0 0.5em;
   }
 }
 
 @media (any-hover: none) and (orientation: landscape) {
-  .navigation {
-    opacity: 1;
-    &__wrapper {
-      justify-content: space-between;
-    }
 
-    &__logo {
-
-    }
-
-    &__logo-link {
-    }
-
-    &__block {
-      @include mix.displayFlex(flex, start, center);
-      gap: 0 20px;
-    }
-
-    &__phone {
-      padding: 0;
-    }
-
-    &__icon {
-    }
-
-    &__link {
-
-    }
-  }
-
-  .main__fullscreen {
-    padding-top: 0;
-  }
-
-  .fullscreen {
-    min-height: 100vh;
-    background-attachment: scroll;
-    &:before {
-
-    }
-
-    &__wrapper {
-      min-height: 100%;
-    }
-
-    &__main-title {
-
-      & > span {
-
-      }
-    }
-
-    &__subtitle {
-
-    }
-
-    &__buttons {
-      flex-direction: row;
-    }
-
-    &__button {
-
-    }
-
-    &__button_black {
-
-    }
-  }
-
-  .about-me {
-
-    &__wrapper {
-      justify-content: start;
-      flex-direction: row;
-      min-height: 100vh;
-      gap: 20px;
-    }
-
-    &__subtitle {
-
-    }
-
-    &__text {
-
-
-      &>p {
-        &:last-child {
-
-        }
-      }
-    }
-
-    &__list {
-
-      &>li {
-      }
-    }
-
-    &__button {
-
-    }
-
-    &__image {
-      flex: 0 1 50%;
-      &>img {
-        height: 100%;
-        max-width: 100%;
-      }
-    }
-  }
-
-  .portfolio {
-    background-attachment: scroll;
-  }
 }

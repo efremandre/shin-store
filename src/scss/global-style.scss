@@ -1,21 +1,23 @@
 @use 'base/variable' as var;
-@use "base/mixin" as mix;
+@use 'base/mixin' as mix;
 @use 'base/extentsions';
 
 html,
 body {
 	height: 100%;
-	scrollbar-color: var.$accentColor var.$lightColor;
+	scrollbar-color: var.$darkColor var.$lightColor;
 	scrollbar-width: thin;
 	font-family: var.$family;
 	font-weight: 400;
 	line-height: var.$generalLineHeight;
 	letter-spacing: var.$letterSpacing;
 	color: var.$generalColorText;
+	background-color: var.$mainBg;
 	scroll-behavior: smooth;
 }
 
 * img {
+	display: block;
 	max-width: 100%;
 }
 
@@ -52,7 +54,7 @@ p {
 a {
 	font-family: var.$family;
 	text-decoration: none;
-	color: var.$generalColorText;
+	color: var.$lightColor;
 }
 
 a:focus {
@@ -74,18 +76,11 @@ a:focus {
 }
 
 .container {
+	width: 100%;
+	box-sizing: border-box;
 	max-width: #{var.$widthContainer + px};
 	margin: 0 auto;
 	padding: 0 1.3em;
-}
-
-.logo {
-	font-family: var.$subFamily;
-	letter-spacing: var.$letterSpacing;
-	@include mix.adaptivFont(30, 18);
-	font-style: normal;
-	font-weight: 700;
-	line-height: 130%;
 }
 
 .main-section {
@@ -99,4 +94,12 @@ a:focus {
 	line-height: var.$titleHeight;
 	letter-spacing: var.$letterSpacing;
 	text-transform: var.$titleTransform;
+}
+
+.red {
+	color: var.$accentColor;
+}
+
+.green {
+	color: var.$accentColorTwo;
 }

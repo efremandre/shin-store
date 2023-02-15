@@ -1,0 +1,81 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+@use '../modules/button-dawn';
+
+.main__contact {
+  padding: 1.7em 0;
+}
+
+.contact {
+  @include mix.displayFlex(flex, center, center);
+  min-height: 80vh;
+  color: var.$lightColor;
+  background: #fff url('../../assets/images/bg-contacts.jpg') center center / cover no-repeat;
+  @media (any-hover: hover) {
+    background-attachment: fixed;
+  }
+
+  &__wrapper {
+    @include mix.displayFlex(flex, start, center);
+    margin: 0 -1em;
+    flex-wrap: unset;
+  }
+
+  &__title {
+    margin-bottom: 1em;
+    color: var.$lightColor;
+  }
+
+  &__contact-block {
+    flex: 0 1 50%;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  &__contact-description {
+    margin-bottom: 15px;
+  }
+
+  &__social {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    @include mix.displayFlex(flex, start, center);
+  }
+
+  &__map-block {
+    flex: 0 1 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0 1em;
+  }
+
+  &__button {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  &__map {
+    display: block;
+    width: 100%;
+    box-shadow: 0 4px 10px 0 rgba(80, 80, 80, 0.2);
+  }
+}
+
+.social__item {
+  @include mix.displayFlex(flex, start, center);
+  margin-right: 20px;
+  gap: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &>p {
+    @include mix.adaptivFont(14, 8);
+    line-height: 1.1em;
+  }
+}

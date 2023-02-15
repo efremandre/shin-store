@@ -3,12 +3,17 @@
 @use '../../node_modules/swiper/swiper-bundle.min.css';
 @use './fonts.scss';
 @use 'global-style';
+@use 'privacy/privacy';
+@use './modules/form';
 @use './modules/scroll-animation';
 @use './modules/scrollbar';
 @use './modules/button-up';
 @use './modules/general-button';
 @use './modules/subtitle';
+@use './modules/social';
+@use './modules/logo';
 @use './layout/header';
 @use './index/main';
 @use './layout/footer';
+@use './modules/burger';
 @use 'responsive';

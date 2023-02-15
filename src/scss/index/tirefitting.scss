@@ -1,0 +1,39 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+@use '../modules/button-dawn';
+
+.main__tirefitting {
+  padding: 1.7em 0;
+}
+
+.tirefitting {
+  background: #818181 url(../../assets/images/bg-tirefitting.jpg) right center / cover no-repeat;
+  @media (any-hover: hover) {
+    background-attachment: fixed;
+  }
+
+  &__row {
+    @include mix.displayFlex(flex, end, center);
+    min-height: 60vh;
+  }
+
+  &__wrapper {
+    width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  &__description {
+    color: var.$lightColor;
+    margin-bottom: 1em;
+
+  }
+
+  &__button {
+    margin-top: 1.5em;
+  }
+}

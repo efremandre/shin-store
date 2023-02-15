@@ -1,3 +1,4 @@
 User-agent: *
-Sitemap: https://sitename.ru/sitemap.xml
-Disallow: *.pdf
+Sitemap: https://shinstore.ru/sitemap.xml
+Disallow: /privacy/*.*
+Disallow: *.json

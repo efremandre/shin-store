@@ -1,0 +1,132 @@
+@use '../base/variable' as var;
+@use '../base/mixin' as mix;
+@use '../base/extentsions';
+@use '../modules/button-dawn';
+
+.main__feedback {
+  padding: 1.7em 0;
+}
+
+.feedback {
+ &__title {
+   margin-bottom: .7em;
+ }
+
+  &__wrapper {
+   align-items: flex-start;
+  }
+
+  &__slider-container {
+   width: 80%;
+   margin: 0 auto;
+   overflow: hidden;
+   box-sizing: border-box;
+  }
+
+ &__slider {
+  padding-bottom: 50px;
+ }
+
+ &__wrapper-slide {
+  margin: 10px;
+  padding: 3em;
+  background: #fff;
+  box-shadow: 0 4px 10px 0 rgba(80, 80, 80, 0.2);
+  transition: box-shadow 1s ease;
+
+  @media (any-hover: hover) {
+      &:hover {
+       box-shadow: 0 4px 10px 0 rgba(11, 11, 11, 0.4);
+      }
+  }
+ }
+
+ &__next,
+ &__prev {
+  transition: transform .5s ease;
+
+  &:active:after {
+   transform: scale(.9);
+  }
+  @media (any-hover: hover) {
+   &:hover {
+    &:after {text-shadow: 0 4px 6px rgba(11, 11, 11, .5);}
+    transform: translateY(-1px);
+   }
+  }
+ }
+
+ &__next:after,
+ &__prev:after {
+  color: var.$darkColor;
+  font-size: 35px;
+  font-weight: 600;
+  transition: text-shadow .5s ease, transform .5s ease;
+ }
+ 
+ &__pagination > .swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  background: var.$darkColor;
+ }
+
+ &__client {
+  @include mix.displayFlex(flex, start, center);
+  margin-bottom: 20px;
+ }
+
+ &__wrapper-image {
+  width: 100%;
+  max-width: 70px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &>img {
+   width: 100%;
+  }
+ }
+
+ &__wrapper-name {
+  margin-left: 20px;
+ }
+
+ &__rating {
+  &>span {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: #fff url('../../assets/images/icon/star.svg') center center / cover no-repeat;
+  }
+ }
+
+ &__name {
+  @include mix.adaptivFont(var.$generalBigTextSize, var.$generalBigTextSizeMin);
+  margin-bottom: 10px;
+  font-weight: 600;
+ }
+
+  &__item {
+    flex: 1 1 auto;
+   margin-bottom: 1em;
+    @include mix.displayFlex(flex, space-between, flex-end);
+  }
+
+  &__text {
+   @include mix.adaptivFont(var.$generalBigTextSize, var.$generalBigTextSizeMin);
+  }
+
+  &__link {
+   display: block;
+   text-align: right;
+   color: var.$generalColorText;
+   @include mix.adaptivFont(14, 10);
+   text-decoration: underline;
+
+   @media (any-hover: hover) {
+       &:hover {
+          text-decoration: none;
+       }
+   }
+ }
+}

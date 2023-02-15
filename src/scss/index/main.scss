@@ -1,5 +1,11 @@
 @use '../base/variable' as var;
 @use 'fullscreen';
+@use 'brands';
+@use 'catalog';
+@use 'tirefitting';
+@use 'whyme';
+@use 'feedback';
+@use 'contact';
 @use '../modules/modal-img';
 
 .main {

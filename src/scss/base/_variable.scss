@@ -1,7 +1,8 @@
 @use "sass:map";
 /// общие
-$mainBg: #FFF; // background
-$accentColor: #010101; // акцентный цвет и цвет скроллбара
+$mainBg: #F5F5F5; // background
+$accentColor: #C52917; // акцентный цвет и цвет скроллбара
+$accentColorTwo: rgb(127, 177, 61); // второй акцентный цвет и цвет скроллбара
 $widthContainer: 1200; // max-width
 
 $family: 'Circe', 'Arial', 'Helvetica', sans-serif; // font-family дефолтный шрифт
@@ -27,7 +28,7 @@ $titleColor: #FFF; // color
 $titleWeight: 700; // font-weight
 $titleFontSize: 48; // font-size
 $titleFontSizeMin: 28; // font-size
-$titleHeight: 1.3em; // line-height
+$titleHeight: 1.1em; // line-height
 $titleTransform: none; // text-transform
 
 /// подзаголовок
@@ -38,8 +39,8 @@ $subTitleFontSizeMin: 18; // font-size screen 320px
 $subTitleHeight: 1.5em; // line-height
 
 /// бургер
-$colorBurger: #010101;
+$colorBurger: #fff;
 
 /// кнопка вверх
-$darkColor: #010101; // border, background for :before, :after, background for button-up__link
-$lightColor: #FFF; // hover background for :before, :after
+$darkColor: #111111; // border, background for :before, :after, background for button-up__link
+$lightColor: #fff; // hover background for :before, :after
