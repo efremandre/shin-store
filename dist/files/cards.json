@@ -5,7 +5,7 @@
 		"title": {
 			"brand": "Pirelli",
 			"modelname": "P7cint",
-			"modelnumber": "ECO",
+			"modelnumber": "ECO grdC",
 			"width": "205",
 			"height": "55",
 			"radius": "16",
@@ -31,7 +31,7 @@
 			"indexload": "91",
 			"indexspeed": "V"
 		},
-		"price": "",
+		"price": "4 150",
 		"season": {
 			"url": "summer",
 			"alt": "Летние"
@@ -69,7 +69,7 @@
 			"indexload": "82",
 			"indexspeed": "V"
 		},
-		"price": "",
+		"price": "3 750",
 		"season": {
 			"url": "summer",
 			"alt": "Летние"
@@ -88,7 +88,7 @@
 			"indexload": "95",
 			"indexspeed": "H"
 		},
-		"price": "",
+		"price": "4 300",
 		"season": {
 			"url": "summer",
 			"alt": "Летние"
@@ -101,13 +101,13 @@
 			"brand": "Nexen Tire",
 			"modelname": "",
 			"modelnumber": "",
-			"width": "205",
-			"height": "55",
-			"radius": "16",
+			"width": "195",
+			"height": "65",
+			"radius": "15",
 			"indexload": "91",
-			"indexspeed": "V"
+			"indexspeed": "T"
 		},
-		"price": "",
+		"price": "3 750",
 		"season": {
 			"url": "summer",
 			"alt": "Летние"
@@ -126,7 +126,7 @@
 			"indexload": "91",
 			"indexspeed": "v"
 		},
-		"price": "",
+		"price": "4 200",
 		"season": {
 			"url": "summer",
 			"alt": "Летние"
@@ -136,16 +136,35 @@
 		"id": 8,
 		"url": "../assets/images/catalog/photo8.jpg",
 		"title": {
-			"brand": "MICHELIN",
+			"brand": "Kumho Tyre",
+			"modelname":  "EcoWing",
+			"modelnumber":  "ES31",
+			"width": "195",
+			"height": "65",
+			"radius": "15",
+			"indexload": "91",
+			"indexspeed": "V"
+		},
+		"price": "4 200",
+		"season": {
+			"url": "summer",
+			"alt": "Лето"
+		}
+	},
+	{
+		"id": 9,
+		"url": "../assets/images/catalog/photo9.jpg",
+		"title": {
+			"brand": "Nexen Tire",
 			"modelname":  "",
-			"modelnumber":  "320",
-			"width": "185",
-			"height": "60",
-			"radius": "14",
-			"indexload": "82",
+			"modelnumber":  "",
+			"width": "195",
+			"height": "65",
+			"radius": "15",
+			"indexload": "91",
 			"indexspeed": "T"
 		},
-		"price": "5 500",
+		"price": "5 400",
 		"season": {
 			"url": "summer",
 			"alt": "Лето"

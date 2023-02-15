@@ -17,7 +17,6 @@
 
 .card {
   height: auto;
-  overflow-y: auto;
   scrollbar-color: #223c50 #f3f3f4;
   scrollbar-width: thin;
 
@@ -50,13 +49,13 @@
   }
 
   &__image-wrapper {
-    @include mix.displayFlex(flex, center, start);
     height: 450px;
     border-radius: 5px;
     overflow: hidden;
 
     &>img {
       width: 100%;
+      height: 100%;
       object-fit: cover;
       transition: transform .5s ease-in;
     }

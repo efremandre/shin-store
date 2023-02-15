@@ -16,7 +16,7 @@ export function sendForm() {
 				e.preventDefault();
 				let formData = new FormData(el);
 
-				let response = await fetch('send.php', {
+				let response = await fetch('../../vendor/send.php', {
 					method: 'POST',
 					body: formData,
 				});
