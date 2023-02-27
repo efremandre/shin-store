@@ -27,4 +27,4 @@
 * Swiper
 
 QR-code для эл. визитки
->![gr-red small](https://user-images.githubusercontent.com/25119216/221471052-6a374d59-3c95-4fab-b4d0-b3d464047ee7.png)
+>![gr-red middle](https://user-images.githubusercontent.com/25119216/221472309-f4f86ee3-cadc-4e9e-9a46-4dfcadf2b7ff.png)
