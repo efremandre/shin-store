@@ -25,3 +25,6 @@
 * SCSS
 * JavaScript
 * Swiper
+
+QR-code для эл. визитки
+>![gr-red small](https://user-images.githubusercontent.com/25119216/221471052-6a374d59-3c95-4fab-b4d0-b3d464047ee7.png)
